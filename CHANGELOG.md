@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/AlignNetwork/align-sdk/compare/v1.0.6...v1.0.7) (2024-04-19)
+
+
+### Bug Fixes
+
+* added publish config in package.json ([3e8989c](https://github.com/AlignNetwork/align-sdk/commit/3e8989ca92c396b9e18016f7d71b2d7f227eaabf))
+
 ## [1.0.6](https://github.com/AlignNetwork/align-sdk/compare/v1.0.5...v1.0.6) (2024-04-19)
 
 
