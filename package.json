@@ -27,5 +27,9 @@
   "homepage": "https://align.network",
   "license": "MIT",
   "private": false,
-  "type": "module"
+  "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
