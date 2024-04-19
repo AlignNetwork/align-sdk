@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/AlignNetwork/align-sdk/compare/v1.0.2...v1.0.3) (2024-04-19)
+
+
+### Bug Fixes
+
+* updated release workflow ([c2bd6e3](https://github.com/AlignNetwork/align-sdk/commit/c2bd6e38cdf48e5085fecc47810c5b3fb0b9fe9c))
+* updated release workflow ([c4c7cee](https://github.com/AlignNetwork/align-sdk/commit/c4c7cee139a098b1a6c63a9cb19c00b1be6319b1))
+
 ## [1.0.2](https://github.com/AlignNetwork/align-sdk/compare/v1.0.1...v1.0.2) (2024-04-19)
 
 
