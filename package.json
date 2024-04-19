@@ -1,6 +1,6 @@
 {
-  "name": "align-sdk",
-  "version": "1.0.0",
+  "name": "@alignnetwork/align-sdk",
+  "version": "1.0.1",
   "author": "0xglu",
   "repository": {
     "type": "git",
