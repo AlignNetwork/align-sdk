@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/AlignNetwork/align-sdk/compare/v1.0.4...v1.0.5) (2024-04-19)
+
+
+### Bug Fixes
+
+* github url in package.json ([4251517](https://github.com/AlignNetwork/align-sdk/commit/4251517d4d66f1602382bd9ac1a54c7d0dcb17a7))
+
 ## [1.0.4](https://github.com/AlignNetwork/align-sdk/compare/v1.0.3...v1.0.4) (2024-04-19)
 
 
