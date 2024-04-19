@@ -26,6 +26,6 @@
   "description": "Align Attestation Station SDK",
   "homepage": "https://align.network",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "type": "module"
 }
