@@ -1,15 +1,18 @@
-# sdk
+<div align="center">
 
-To install dependencies:
+  ![background](https://github.com/AlignNetwork/align-sdk/assets/61569650/ad422cba-e273-4c98-ad6c-31766209f1a2)
 
-```bash
-bun install
-```
+</div>
 
-To run:
+<h2 align="center">Attestation Station SDK</h2>
+<br />
+<p align="center">
 
-```bash
-bun run index.ts
-```
+<br/>
+<a href="https://twitter.com/align_network">Twitter</a> | 
+<a href="https://warpcast.com/~/channel/align">Warpcast</a>
 
-This project was created using `bun init` in bun v1.0.24. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+> [!CAUTION]
+> UNSTABLE. This repo changes rapidly and the contracts are updated frequently.
+
+An SDK for interacting with the Align Network
