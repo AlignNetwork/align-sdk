@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/AlignNetwork/align-sdk/compare/v1.0.5...v1.0.6) (2024-04-19)
+
+
+### Bug Fixes
+
+* updated package name in package.json ([16d304c](https://github.com/AlignNetwork/align-sdk/commit/16d304c2994f893568358ae0f08e8c0344db6d1f))
+
 ## [1.0.5](https://github.com/AlignNetwork/align-sdk/compare/v1.0.4...v1.0.5) (2024-04-19)
 
 
