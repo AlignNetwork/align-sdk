@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/AlignNetwork/align-sdk/compare/v1.0.3...v1.0.4) (2024-04-19)
+
+
+### Bug Fixes
+
+* changed to public in package.json ([31b694f](https://github.com/AlignNetwork/align-sdk/commit/31b694feb34b16ee3168cd278d847a09e27ae897))
+
 ## [1.0.3](https://github.com/AlignNetwork/align-sdk/compare/v1.0.2...v1.0.3) (2024-04-19)
 
 
