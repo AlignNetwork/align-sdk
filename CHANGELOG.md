@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/AlignNetwork/align-sdk/compare/v1.0.1...v1.0.2) (2024-04-19)
+
+
+### Bug Fixes
+
+* updated commitlint config ([4cac208](https://github.com/AlignNetwork/align-sdk/commit/4cac208cd5a3633d1c6128cecc080fdb6f12e4cf))
+* updated github release ([7bbc6cc](https://github.com/AlignNetwork/align-sdk/commit/7bbc6ccdd55f1156019f7d78e5efba89110bb28b))
+
 ## [1.0.1](https://github.com/AlignNetwork/align-sdk/compare/v1.0.0...v1.0.1) (2024-04-19)
 
 
