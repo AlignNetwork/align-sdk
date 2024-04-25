@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/AlignNetwork/align-sdk/compare/v1.0.7...v1.1.0) (2024-04-25)
+
+
+### Features
+
+* added read from dev api and write and hooks ([a8ac946](https://github.com/AlignNetwork/align-sdk/commit/a8ac946baa5860306a3a94c42982766bd581b76e))
+
 ## [1.0.7](https://github.com/AlignNetwork/align-sdk/compare/v1.0.6...v1.0.7) (2024-04-19)
 
 
