@@ -6,9 +6,9 @@ import {
   type PublicClient,
   type WalletClient,
 } from "viem";
-import { aasABI, aidrABI } from "../lib";
-import { alignTestnetV2, alignTestnetV2Constants } from "../lib/constants";
-
+import { aasABI, aidrABI } from "../../lib";
+import { alignTestnetV2, alignTestnetV2Constants } from "../../lib/constants";
+//test
 export class AlignAttestationStation {
   walletClient: WalletClient;
   publicClient: PublicClient;

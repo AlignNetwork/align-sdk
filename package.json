@@ -2,14 +2,42 @@
   "name": "@align-network/align-sdk",
   "version": "1.0.7",
   "author": "0xglu",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "sideEffects": false,
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlignNetwork/align-sdk.git"
   },
-  "scripts": {
-    "prepare": "husky"
+  "tsup": {
+    "entry": [
+      "./src/**/*.ts"
+    ],
+    "clean": true,
+    "format": [
+      "esm"
+    ],
+    "sourcemap": true,
+    "sideEffects": false,
+    "dts": true
   },
-  "module": "index.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./read": {
+      "types": "./dist/read/index.d.ts",
+      "default": "./dist/read/index.js"
+    }
+  },
+  "scripts": {
+    "prepare": "husky",
+    "build": "rimraf dist && tsup && tsc --emitDeclarationOnly --declaration",
+    "dev": "pnpm run build --watch"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
@@ -23,13 +51,22 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
   "description": "Align Attestation Station SDK",
   "homepage": "https://align.network",
   "license": "MIT",
   "private": false,
-  "type": "module",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.31.0",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.2"
   }
 }
