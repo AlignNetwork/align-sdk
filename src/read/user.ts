@@ -1,4 +1,4 @@
-const apiUrl = "https://apidev.align.network/";
+const apiUrl = "https://apidev-v5.align.network/";
 
 export async function user(alignId: string): Promise<any> {
   const url = `${apiUrl}/user/${alignId}`;

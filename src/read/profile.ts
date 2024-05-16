@@ -1,7 +1,7 @@
 const apiUrl = "https://apidev-v5.align.network/";
 
-export async function users(pageParam: number | null): Promise<any> {
-  const url = `${apiUrl}/users/${pageParam}`;
+export async function profile(alignId: string): Promise<any> {
+  const url = `${apiUrl}/profile/${alignId}`;
 
   try {
     const response = await fetch(url, {
@@ -16,13 +16,7 @@ export async function users(pageParam: number | null): Promise<any> {
     }
 
     // Assuming the API returns the data array directly
-    const data = await response.json();
-    return {
-      //@ts-ignore
-      data: data.data,
-      //@ts-ignore
-      nextPage: data.nextPage,
-    };
+    return await response.json();
   } catch (error) {
     console.error("Fetching align id failed:", error);
     throw error; // Re-throw the error if you want calling code to handle it
