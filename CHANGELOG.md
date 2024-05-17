@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/AlignNetwork/align-sdk/compare/v1.2.0...v1.3.0) (2024-05-17)
+
+
+### Features
+
+* fixed workflow ([#6](https://github.com/AlignNetwork/align-sdk/issues/6)) ([f38478f](https://github.com/AlignNetwork/align-sdk/commit/f38478f0a22da75bb592ba4ee82f2b564cdd4530))
+* fixed workflow ([#8](https://github.com/AlignNetwork/align-sdk/issues/8)) ([bc8879d](https://github.com/AlignNetwork/align-sdk/commit/bc8879dfe7cbd818118aefbac65f8e15479ef33f))
+
 # [1.2.0](https://github.com/AlignNetwork/align-sdk/compare/v1.1.1...v1.2.0) (2024-05-17)
 
 
