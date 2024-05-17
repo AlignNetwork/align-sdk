@@ -1,3 +1,10 @@
+## [1.3.13](https://github.com/AlignNetwork/align-sdk/compare/v1.3.12...v1.3.13) (2024-05-17)
+
+
+### Bug Fixes
+
+* added slash to releasrc ([bd6275a](https://github.com/AlignNetwork/align-sdk/commit/bd6275a33b6b4d49c018c632f15d2022b4775524))
+
 ## [1.3.12](https://github.com/AlignNetwork/align-sdk/compare/v1.3.11...v1.3.12) (2024-05-17)
 
 
