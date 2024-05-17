@@ -1,3 +1,10 @@
+## [1.3.9](https://github.com/AlignNetwork/align-sdk/compare/v1.3.8...v1.3.9) (2024-05-17)
+
+
+### Bug Fixes
+
+* updated releasrc ([5b56d3f](https://github.com/AlignNetwork/align-sdk/commit/5b56d3f66602e70c88569d8e5e852481a0162938))
+
 ## [1.3.8](https://github.com/AlignNetwork/align-sdk/compare/v1.3.7...v1.3.8) (2024-05-17)
 
 
