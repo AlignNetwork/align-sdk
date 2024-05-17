@@ -15,7 +15,6 @@ lerna-debug.log*
 node_modules/
 
 .npm
-dist
 # Output of 'npm pack'
 
 *.tgz
