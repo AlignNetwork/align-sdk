@@ -1,9 +1,0 @@
-# Exclude unnecessary files
-node_modules/
-*.log
-*.tgz
-*.env
-
-# Include the dist folder
-!dist
-!dist/**
