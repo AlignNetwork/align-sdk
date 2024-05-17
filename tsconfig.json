@@ -16,8 +16,7 @@
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
-    "rootDir": ".",
-    "outDir": "./dist"
+    "rootDir": "."
   },
   "exclude": ["node_modules", "dist", "commitlint.config.js"]
 }
