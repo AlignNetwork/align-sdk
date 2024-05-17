@@ -1,3 +1,10 @@
+## [1.3.10](https://github.com/AlignNetwork/align-sdk/compare/v1.3.9...v1.3.10) (2024-05-17)
+
+
+### Bug Fixes
+
+* updated tsconfig ([ab53b55](https://github.com/AlignNetwork/align-sdk/commit/ab53b556d3fbf7399f5770c9897a70b8e69e512f))
+
 ## [1.3.9](https://github.com/AlignNetwork/align-sdk/compare/v1.3.8...v1.3.9) (2024-05-17)
 
 
