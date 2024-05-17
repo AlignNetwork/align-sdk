@@ -35,15 +35,10 @@
   },
   "scripts": {
     "prepare": "husky",
-    "build": "rm -rf dist && tsc --project tsconfig.json --outDir ./dist --declaration --declarationMap --declarationDir ./dist/types && cp package.json dist/",
+    "build": "rm -rf dist && tsc --project tsconfig.json --outDir ./dist --declaration --declarationMap --declarationDir ./dist/types && cp package.json dist/package.json",
     "dev": "npm run build --watch",
     "test": "source .env && mocha"
   },
-  "files": [
-    "dist",
-    "package.json",
-    "README.md"
-  ],
   "devDependencies": {
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
