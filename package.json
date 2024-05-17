@@ -40,7 +40,7 @@
     "test": "source .env && mocha"
   },
   "files": [
-    "dist/*",
+    "dist/",
     "README.md",
     "package.json"
   ],
