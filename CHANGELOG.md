@@ -1,3 +1,11 @@
+## [1.3.7](https://github.com/AlignNetwork/align-sdk/compare/v1.3.6...v1.3.7) (2024-05-17)
+
+
+### Bug Fixes
+
+* removed pnpm ([951df2a](https://github.com/AlignNetwork/align-sdk/commit/951df2afc9ce18a051512b0fb3e52cf6da41075c))
+* removed pnpm ([5aac080](https://github.com/AlignNetwork/align-sdk/commit/5aac0803e7d01408f3ac3e1d63bb0226b09538de))
+
 ## [1.3.6](https://github.com/AlignNetwork/align-sdk/compare/v1.3.5...v1.3.6) (2024-05-17)
 
 
