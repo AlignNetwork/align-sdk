@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/AlignNetwork/align-sdk/compare/v1.1.1...v1.2.0) (2024-05-17)
+
+
+### Bug Fixes
+
+* replaced tsup with tsc so bundles cleaner ([c2f0969](https://github.com/AlignNetwork/align-sdk/commit/c2f0969850e8891de18831367135aa46c38b1276))
+
+
+### Features
+
+* switched to new version of interactions ([#2](https://github.com/AlignNetwork/align-sdk/issues/2)) ([d778a4a](https://github.com/AlignNetwork/align-sdk/commit/d778a4af21ecde2510b42778d1872386659912ad))
+* updated husky to fix footer error ([#4](https://github.com/AlignNetwork/align-sdk/issues/4)) ([787da9f](https://github.com/AlignNetwork/align-sdk/commit/787da9fd7e7e7adb0defbc53838cdfd276f2ed87))
+
 ## [1.1.1](https://github.com/AlignNetwork/align-sdk/compare/v1.1.0...v1.1.1) (2024-04-25)
 
 
