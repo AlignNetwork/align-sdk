@@ -15,18 +15,6 @@
         "pkgRoot": "dist/"
       }
     ],
-    "@semantic-release/github",
-    [
-      "@semantic-release/git",
-      {
-        "assets": [
-          "package.json",
-          "README.md",
-          "CHANGELOG.md",
-          "dist/**/*.{js}"
-        ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }
-    ]
+    "@semantic-release/github"
   ]
 }
