@@ -1,3 +1,10 @@
+## [1.3.17](https://github.com/AlignNetwork/align-sdk/compare/v1.3.16...v1.3.17) (2024-05-17)
+
+
+### Bug Fixes
+
+* updated package.json ([6a3b79a](https://github.com/AlignNetwork/align-sdk/commit/6a3b79a23a0da201b164ed8eea75556f677927fb))
+
 ## [1.3.16](https://github.com/AlignNetwork/align-sdk/compare/v1.3.15...v1.3.16) (2024-05-17)
 
 
