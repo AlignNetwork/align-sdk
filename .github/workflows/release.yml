@@ -33,9 +33,6 @@ jobs:
       - name: Build
         run: pnpm run build
 
-      - name: Prepare dist for publish
-        run: cp package.json dist/ # Ensures package.json is in dist
-
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
