@@ -1,3 +1,10 @@
+## [1.3.8](https://github.com/AlignNetwork/align-sdk/compare/v1.3.7...v1.3.8) (2024-05-17)
+
+
+### Bug Fixes
+
+* added files back in ([7d20d61](https://github.com/AlignNetwork/align-sdk/commit/7d20d617fe591811520339fdcfbe0ca59f6942d5))
+
 ## [1.3.7](https://github.com/AlignNetwork/align-sdk/compare/v1.3.6...v1.3.7) (2024-05-17)
 
 
