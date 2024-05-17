@@ -1,3 +1,12 @@
+## [1.3.1](https://github.com/AlignNetwork/align-sdk/compare/v1.3.0...v1.3.1) (2024-05-17)
+
+
+### Bug Fixes
+
+* added package.json to build ([2285eef](https://github.com/AlignNetwork/align-sdk/commit/2285eefac7dd3750e7a53941cf517b456949a75e))
+* removed npm ignore ([75a110d](https://github.com/AlignNetwork/align-sdk/commit/75a110da37076663a10c900b8a525b55bb7caa99))
+* trying another fix ([#10](https://github.com/AlignNetwork/align-sdk/issues/10)) ([92dc9b3](https://github.com/AlignNetwork/align-sdk/commit/92dc9b322d7c8246417ab6671c831d4094a8e073))
+
 # [1.3.0](https://github.com/AlignNetwork/align-sdk/compare/v1.2.0...v1.3.0) (2024-05-17)
 
 
