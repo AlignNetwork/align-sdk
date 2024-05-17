@@ -1,4 +1,6 @@
-const apiUrl = "https://apidev-v5.align.network/";
+import { alignUrls } from "../../lib";
+
+const apiUrl = alignUrls.indexer;
 
 export async function user(alignId: string): Promise<any> {
   const url = `${apiUrl}/user/${alignId}`;

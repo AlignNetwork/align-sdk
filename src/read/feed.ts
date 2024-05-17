@@ -1,4 +1,6 @@
-const apiUrl = "https://apidev-v5.align.network/";
+import { alignUrls } from "../../lib";
+
+const apiUrl = alignUrls.indexer;
 
 export async function feed(pageParam: number | null): Promise<any> {
   const url = `${apiUrl}/feed/${pageParam}`;

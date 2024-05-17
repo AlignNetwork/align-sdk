@@ -32,6 +32,11 @@ export const alignTestnetV2 = defineChain({
 });
 
 export const alignTestnetV2Constants = {
-  aidr: "0xaB128F232027dE26093E1A3e18179D81455a18Ea" as `0x${string}`,
-  aas: "0xb2BbB5Fd82373936C1561A4D4B3C88B4Adf41362" as `0x${string}`,
+  aidr: "0xD821932b7d8F2DE2e53845E4b8ab66aD661cA130" as `0x${string}`,
+  intStation: "0xf581E6dfA593346E9c8163dD3Ed533ba9733A97a" as `0x${string}`,
+};
+
+export const alignUrls = {
+  ipfs: "http://ipfs-dev.align.network",
+  indexer: "https://apidev-v5.align.network/",
 };

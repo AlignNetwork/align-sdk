@@ -1,4 +1,6 @@
-const dataNetworkUrl = "http://localhost:4200";
+import { alignUrls } from "../../lib";
+
+const dataNetworkUrl = alignUrls.ipfs;
 
 export async function getPins(): Promise<any> {
   const res = await fetch(`${dataNetworkUrl}/pins`, {

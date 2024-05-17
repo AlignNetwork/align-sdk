@@ -1,12 +1,24 @@
-"use server";
+import { alignUrls } from "../../lib";
 
-const dataNetworkUrl = "http://localhost:4200";
+export class UploadError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "UploadError";
+  }
+}
+
+const dataNetworkUrl = alignUrls.ipfs;
+
+type UploadResponse = {
+  result: string;
+  cid: string;
+  data: { [key: string]: string } | string;
+  error: boolean;
+};
 
 export async function upload(data: {
   [key: string]: string;
-}): Promise<{ result: string; data: string }> {
-  console.log("server side action");
-  console.log(data);
+}): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
   const res = await fetch(`${dataNetworkUrl}/upload`, {
     method: "POST",
     headers: {
@@ -14,10 +26,14 @@ export async function upload(data: {
     },
     body: JSON.stringify(data),
   });
-  let result: any = await res.json();
+  let result = (await res.json()) as UploadResponse;
   if (result.error) {
-    return { result: "error", data: result.result };
+    throw new UploadError(result.result);
   }
-  console.log(result);
-  return result;
+  return {
+    error: result.error,
+    result: result.result,
+    data: result.data,
+    cid: result.cid,
+  };
 }

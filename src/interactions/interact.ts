@@ -4,22 +4,26 @@ import {
   createPublicClient,
   http,
 } from "viem";
-import { aasABI } from "../../lib";
 import { alignTestnetV2, alignTestnetV2Constants } from "../../lib/constants";
 
 import "fastestsmallesttextencoderdecoder";
 import { createWalletClient } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
-import { upload } from "../dataNetwork/upload";
-//test
-export async function interact(
-  interactionTypeKey: string,
-  toAlignId: bigint,
-  data: { [key: string]: string }
-) {
-  console.log("attesting");
+import { intStationABI } from "../../lib/abi/intStationABI";
 
-  const PRIVATE_KEY = "";
+export class InteractError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "InteractError";
+  }
+}
+
+export async function interactOnchain(
+  interactionTypeKey: `0x${string}`,
+  toAlignId: bigint,
+  interaction: string
+) {
+  const PRIVATE_KEY = process.env.PRIVATE_KEY as `0x${string}`;
 
   const account = privateKeyToAccount(PRIVATE_KEY as `0x${string}`);
   const walletClient = createWalletClient({
@@ -32,22 +36,17 @@ export async function interact(
     transport: http(alignTestnetV2.rpcUrls.default.http[0]),
   });
 
-  // get interaction type key from registry (hardcode some)
-
-  // upload to ipfs
-  const res = await upload(data);
-
   try {
     const { request } = await publicClient.simulateContract({
-      address: alignTestnetV2Constants.aas,
-      abi: aasABI,
+      address: alignTestnetV2Constants.intStation,
+      abi: intStationABI,
       functionName: "interact",
-      args: [toAlignId, interactionTypeKey, res.data],
+      args: [toAlignId, interactionTypeKey, interaction],
       account: walletClient.account,
     });
     const hash = await walletClient.writeContract(request);
 
-    const receipt = publicClient.waitForTransactionReceipt({
+    const receipt = await publicClient.waitForTransactionReceipt({
       hash: hash,
     });
     return {
@@ -61,16 +60,10 @@ export async function interact(
       );
       if (revertError instanceof ContractFunctionRevertedError) {
         const errorName = revertError.data?.errorName ?? "";
-        return {
-          success: false,
-          error: errorName,
-        };
+        throw new InteractError(errorName);
       }
     }
-    return {
-      success: false,
-      data: err,
-      error: "Unknown error",
-    };
+    console.log(err);
+    throw new InteractError("Unknown error");
   }
 }
