@@ -1,299 +1,170 @@
 export const aidrABI = [
+  { type: "constructor", inputs: [], stateMutability: "nonpayable" },
   {
+    type: "function",
+    name: "cancelOwnershipHandover",
     inputs: [],
+    outputs: [],
+    stateMutability: "payable",
+  },
+  {
+    type: "function",
+    name: "completeOwnershipHandover",
+    inputs: [
+      { name: "pendingOwner", type: "address", internalType: "address" },
+    ],
+    outputs: [],
+    stateMutability: "payable",
+  },
+  {
+    type: "function",
+    name: "devCounter",
+    inputs: [],
+    outputs: [{ name: "", type: "uint256", internalType: "uint256" }],
+    stateMutability: "view",
+  },
+  {
+    type: "function",
+    name: "idCounter",
+    inputs: [],
+    outputs: [{ name: "", type: "uint256", internalType: "uint256" }],
+    stateMutability: "view",
+  },
+  {
+    type: "function",
+    name: "idOf",
+    inputs: [{ name: "owner", type: "address", internalType: "address" }],
+    outputs: [{ name: "alignId", type: "uint256", internalType: "uint256" }],
+    stateMutability: "view",
+  },
+  {
+    type: "function",
+    name: "owner",
+    inputs: [],
+    outputs: [{ name: "result", type: "address", internalType: "address" }],
+    stateMutability: "view",
+  },
+  {
+    type: "function",
+    name: "ownershipHandoverExpiresAt",
+    inputs: [
+      { name: "pendingOwner", type: "address", internalType: "address" },
+    ],
+    outputs: [{ name: "result", type: "uint256", internalType: "uint256" }],
+    stateMutability: "view",
+  },
+  {
+    type: "function",
+    name: "readId",
+    inputs: [{ name: "to", type: "address", internalType: "address" }],
+    outputs: [{ name: "alignId", type: "uint256", internalType: "uint256" }],
+    stateMutability: "view",
+  },
+  {
+    type: "function",
+    name: "register",
+    inputs: [{ name: "to", type: "address", internalType: "address" }],
+    outputs: [{ name: "alignId", type: "uint256", internalType: "uint256" }],
     stateMutability: "nonpayable",
-    type: "constructor",
   },
   {
+    type: "function",
+    name: "registerDev",
+    inputs: [{ name: "to", type: "address", internalType: "address" }],
+    outputs: [{ name: "alignId", type: "uint256", internalType: "uint256" }],
+    stateMutability: "nonpayable",
+  },
+  {
+    type: "function",
+    name: "renounceOwnership",
     inputs: [],
-    name: "AlreadyInitialized",
-    type: "error",
+    outputs: [],
+    stateMutability: "payable",
   },
   {
+    type: "function",
+    name: "requestOwnershipHandover",
     inputs: [],
-    name: "IdExists",
-    type: "error",
+    outputs: [],
+    stateMutability: "payable",
   },
   {
-    inputs: [],
-    name: "NewOwnerIsZeroAddress",
-    type: "error",
-  },
-  {
-    inputs: [],
-    name: "NoHandoverRequest",
-    type: "error",
-  },
-  {
-    inputs: [],
-    name: "NoId",
-    type: "error",
-  },
-  {
-    inputs: [],
-    name: "Unauthorized",
-    type: "error",
-  },
-  {
-    anonymous: false,
+    type: "function",
+    name: "transferId",
     inputs: [
-      {
-        indexed: true,
-        internalType: "address",
-        name: "pendingOwner",
-        type: "address",
-      },
+      { name: "from", type: "address", internalType: "address" },
+      { name: "to", type: "address", internalType: "address" },
     ],
+    outputs: [],
+    stateMutability: "nonpayable",
+  },
+  {
+    type: "function",
+    name: "transferOwnership",
+    inputs: [{ name: "newOwner", type: "address", internalType: "address" }],
+    outputs: [],
+    stateMutability: "payable",
+  },
+  {
+    type: "event",
     name: "OwnershipHandoverCanceled",
-    type: "event",
-  },
-  {
-    anonymous: false,
     inputs: [
       {
-        indexed: true,
-        internalType: "address",
         name: "pendingOwner",
         type: "address",
-      },
-    ],
-    name: "OwnershipHandoverRequested",
-    type: "event",
-  },
-  {
-    anonymous: false,
-    inputs: [
-      {
         indexed: true,
         internalType: "address",
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: "event",
+    name: "OwnershipHandoverRequested",
+    inputs: [
+      {
+        name: "pendingOwner",
+        type: "address",
+        indexed: true,
+        internalType: "address",
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: "event",
+    name: "OwnershipTransferred",
+    inputs: [
+      {
         name: "oldOwner",
         type: "address",
-      },
-      {
         indexed: true,
         internalType: "address",
+      },
+      {
         name: "newOwner",
         type: "address",
+        indexed: true,
+        internalType: "address",
       },
     ],
-    name: "OwnershipTransferred",
-    type: "event",
-  },
-  {
     anonymous: false,
-    inputs: [
-      {
-        indexed: true,
-        internalType: "address",
-        name: "to",
-        type: "address",
-      },
-      {
-        indexed: true,
-        internalType: "uint256",
-        name: "id",
-        type: "uint256",
-      },
-      {
-        indexed: false,
-        internalType: "address",
-        name: "recovery",
-        type: "address",
-      },
-    ],
-    name: "Register",
+  },
+  {
     type: "event",
-  },
-  {
-    inputs: [],
-    name: "cancelOwnershipHandover",
-    outputs: [],
-    stateMutability: "payable",
-    type: "function",
-  },
-  {
+    name: "Register",
     inputs: [
-      {
-        internalType: "address",
-        name: "pendingOwner",
-        type: "address",
-      },
+      { name: "to", type: "address", indexed: true, internalType: "address" },
+      { name: "id", type: "uint256", indexed: true, internalType: "uint256" },
     ],
-    name: "completeOwnershipHandover",
-    outputs: [],
-    stateMutability: "payable",
-    type: "function",
+    anonymous: false,
   },
-  {
-    inputs: [
-      {
-        internalType: "uint256",
-        name: "alignId",
-        type: "uint256",
-      },
-    ],
-    name: "custodyOf",
-    outputs: [
-      {
-        internalType: "address",
-        name: "custody",
-        type: "address",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [],
-    name: "idCounter",
-    outputs: [
-      {
-        internalType: "uint256",
-        name: "",
-        type: "uint256",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [
-      {
-        internalType: "address",
-        name: "owner",
-        type: "address",
-      },
-    ],
-    name: "idOf",
-    outputs: [
-      {
-        internalType: "uint256",
-        name: "alignId",
-        type: "uint256",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [],
-    name: "owner",
-    outputs: [
-      {
-        internalType: "address",
-        name: "result",
-        type: "address",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [
-      {
-        internalType: "address",
-        name: "pendingOwner",
-        type: "address",
-      },
-    ],
-    name: "ownershipHandoverExpiresAt",
-    outputs: [
-      {
-        internalType: "uint256",
-        name: "result",
-        type: "uint256",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [
-      {
-        internalType: "address",
-        name: "to",
-        type: "address",
-      },
-    ],
-    name: "readId",
-    outputs: [
-      {
-        internalType: "uint256",
-        name: "alignId",
-        type: "uint256",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [
-      {
-        internalType: "uint256",
-        name: "alignId",
-        type: "uint256",
-      },
-    ],
-    name: "recoveryOf",
-    outputs: [
-      {
-        internalType: "address",
-        name: "recovery",
-        type: "address",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [
-      {
-        internalType: "address",
-        name: "to",
-        type: "address",
-      },
-      {
-        internalType: "address",
-        name: "recovery",
-        type: "address",
-      },
-    ],
-    name: "register",
-    outputs: [
-      {
-        internalType: "uint256",
-        name: "alignId",
-        type: "uint256",
-      },
-    ],
-    stateMutability: "nonpayable",
-    type: "function",
-  },
-  {
-    inputs: [],
-    name: "renounceOwnership",
-    outputs: [],
-    stateMutability: "payable",
-    type: "function",
-  },
-  {
-    inputs: [],
-    name: "requestOwnershipHandover",
-    outputs: [],
-    stateMutability: "payable",
-    type: "function",
-  },
-  {
-    inputs: [
-      {
-        internalType: "address",
-        name: "newOwner",
-        type: "address",
-      },
-    ],
-    name: "transferOwnership",
-    outputs: [],
-    stateMutability: "payable",
-    type: "function",
-  },
+  { type: "error", name: "AlreadyInitialized", inputs: [] },
+  { type: "error", name: "IdExists", inputs: [] },
+  { type: "error", name: "IncorrectId", inputs: [] },
+  { type: "error", name: "NewOwnerIsZeroAddress", inputs: [] },
+  { type: "error", name: "NoHandoverRequest", inputs: [] },
+  { type: "error", name: "NoId", inputs: [] },
+  { type: "error", name: "NotId", inputs: [] },
+  { type: "error", name: "Unauthorized", inputs: [] },
 ];

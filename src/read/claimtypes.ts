@@ -1,4 +1,4 @@
-const apiUrl = "https://apidev.align.network/";
+const apiUrl = "https://apidev-v5.align.network/";
 
 export async function getAllClaimTypes(): Promise<any> {
   const url = `${apiUrl}/claim-types`;

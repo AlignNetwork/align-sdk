@@ -2,8 +2,8 @@ import { alignUrls } from "../../lib";
 
 const apiUrl = alignUrls.indexer;
 
-export async function user(alignId: string): Promise<any> {
-  const url = `${apiUrl}/user/${alignId}`;
+export async function profile(alignId: string): Promise<any> {
+  const url = `${apiUrl}/profile/${alignId}`;
 
   try {
     const response = await fetch(url, {
