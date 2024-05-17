@@ -39,11 +39,6 @@
     "dev": "npm run build --watch",
     "test": "source .env && mocha"
   },
-  "files": [
-    "dist/",
-    "README.md",
-    "package.json"
-  ],
   "devDependencies": {
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
