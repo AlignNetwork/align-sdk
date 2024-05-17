@@ -1,3 +1,10 @@
+## [1.3.12](https://github.com/AlignNetwork/align-sdk/compare/v1.3.11...v1.3.12) (2024-05-17)
+
+
+### Bug Fixes
+
+* remove ignore and files ([423653f](https://github.com/AlignNetwork/align-sdk/commit/423653faf24d66b9dfe124a362b32b58bec4393b))
+
 ## [1.3.11](https://github.com/AlignNetwork/align-sdk/compare/v1.3.10...v1.3.11) (2024-05-17)
 
 
