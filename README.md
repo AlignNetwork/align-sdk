@@ -4,7 +4,7 @@
 
 </div>
 
-<h2 align="center">Attestation Station SDK</h2>
+<h2 align="center">Align Interaction Station SDK</h2>
 <br />
 <p align="center">
 
@@ -18,7 +18,7 @@
 
 ### Use
 
-see [test](/tests) for example
+see [test](/test) for example
 
 ```typescript
     const data = {
