@@ -1,4 +1,4 @@
-import type { TransactionReceipt } from "viem";
+import type { Account, TransactionReceipt } from "viem";
 import { AlignDefaults } from "./dataNetwork/defaults";
 import { UploadError, upload } from "./dataNetwork/upload";
 import { ValidationError, validate } from "./dataNetwork/validate";
@@ -18,7 +18,8 @@ import { InteractError, interactOnchain } from "./interactions/interact";
 export async function interactDefaults(
   data: { [key: string]: string },
   toAlignId: bigint,
-  defaultType: keyof typeof AlignDefaults
+  defaultType: keyof typeof AlignDefaults,
+  account: Account
 ): Promise<{ success: boolean; receipt?: TransactionReceipt | Error }> {
   try {
     // search AlignDefaults for the defaultType
@@ -32,7 +33,8 @@ export async function interactDefaults(
     let res = await interactOnchain(
       defaultFormat.interactionTypeKey,
       toAlignId,
-      uploadResult.cid
+      uploadResult.cid,
+      account
     );
     return res;
   } catch (error) {

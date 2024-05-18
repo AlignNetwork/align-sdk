@@ -2,15 +2,25 @@
   "name": "@align-network/align-sdk",
   "version": "1.3.0",
   "author": "0xglu",
-  "main": "./src/index.js",
-  "types": "./types/src/index.d.ts",
-  "typings": "./types/src/index.d.ts",
+  "main": "./dist/src/index.js",
+  "types": "./dist/types/src/index.d.ts",
+  "typings": "./dist/types/src/index.d.ts",
   "sideEffects": false,
   "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlignNetwork/align-sdk.git"
   },
+  "files": [
+    "dist/**",
+    "src/**/*.ts",
+    "!test/**/*.test.ts",
+    "!test/**/*.test-d.ts",
+    "/dataNetwork",
+    "/interactions",
+    "/hooks",
+    "/read"
+  ],
   "tsup": {
     "entry": [
       "./src/**/*.ts"
@@ -25,17 +35,13 @@
   },
   "exports": {
     ".": {
-      "types": "./types/src/index.d.ts",
-      "default": "./src/index.js"
-    },
-    "./read": {
-      "types": "./types/src/read/index.d.ts",
-      "default": "./src/read/index.js"
+      "types": "./dist/types/src/index.d.ts",
+      "default": "./dist/src/index.js"
     }
   },
   "scripts": {
     "prepare": "husky",
-    "build": "tsc --project tsconfig.json --declaration --declarationMap --declarationDir ./types && cp package.json README.md ",
+    "build": "rimraf dist && tsc --project tsconfig.json --outDir ./dist --declaration --declarationMap --declarationDir ./dist/types && cp package.json README.md dist/",
     "dev": "npm run build --watch",
     "test": "source .env && mocha"
   },

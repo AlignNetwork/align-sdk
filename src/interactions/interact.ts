@@ -3,12 +3,12 @@ import {
   ContractFunctionRevertedError,
   createPublicClient,
   http,
+  type Account,
 } from "viem";
 import { alignTestnetV2, alignTestnetV2Constants } from "../../lib/constants";
 
 import "fastestsmallesttextencoderdecoder";
 import { createWalletClient } from "viem";
-import { privateKeyToAccount } from "viem/accounts";
 import { intStationABI } from "../../lib/abi/intStationABI";
 
 export class InteractError extends Error {
@@ -21,11 +21,9 @@ export class InteractError extends Error {
 export async function interactOnchain(
   interactionTypeKey: `0x${string}`,
   toAlignId: bigint,
-  interaction: string
+  interaction: string,
+  account: Account
 ) {
-  const PRIVATE_KEY = process.env.PRIVATE_KEY as `0x${string}`;
-
-  const account = privateKeyToAccount(PRIVATE_KEY as `0x${string}`);
   const walletClient = createWalletClient({
     account: account,
     chain: alignTestnetV2,
