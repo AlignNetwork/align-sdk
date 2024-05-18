@@ -13,7 +13,6 @@
   },
   "files": [
     "dist/**",
-    "README.md",
     "src/**/*.ts",
     "!test/**/*.test.ts",
     "!test/**/*.test-d.ts",
