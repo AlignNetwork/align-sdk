@@ -1,4 +1,4 @@
-import { alignUrls } from "../../lib";
+import { alignUrls } from "../lib";
 
 export class UploadError extends Error {
   constructor(message: string) {

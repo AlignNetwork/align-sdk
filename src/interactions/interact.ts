@@ -5,11 +5,11 @@ import {
   http,
   type Account,
 } from "viem";
-import { alignTestnetV2, alignTestnetV2Constants } from "../../lib/constants";
+import { alignTestnetV2, alignTestnetV2Constants } from "../lib/constants";
 
 import "fastestsmallesttextencoderdecoder";
 import { createWalletClient } from "viem";
-import { intStationABI } from "../../lib/abi/intStationABI";
+import { intStationABI } from "../lib/abi/intStationABI";
 
 export class InteractError extends Error {
   constructor(message: string) {

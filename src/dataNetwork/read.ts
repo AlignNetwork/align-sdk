@@ -1,4 +1,4 @@
-import { alignUrls } from "../../lib";
+import { alignUrls } from "../lib";
 
 const dataNetworkUrl = alignUrls.ipfs;
 
