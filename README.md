@@ -1,5 +1,6 @@
 <div align="center">
-  ![background](https://github.com/AlignNetwork/align-sdk/assets/61569650/ad422cba-e273-4c98-ad6c-31766209f1a2)
+
+![background](https://github.com/AlignNetwork/align-sdk/assets/61569650/ad422cba-e273-4c98-ad6c-31766209f1a2)
 
 </div>
 
