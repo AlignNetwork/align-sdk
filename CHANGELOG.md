@@ -1,3 +1,10 @@
+## [1.4.8](https://github.com/AlignNetwork/align-sdk/compare/v1.4.7...v1.4.8) (2024-05-20)
+
+
+### Bug Fixes
+
+* switched getContent to get request and added test ([ef8490d](https://github.com/AlignNetwork/align-sdk/commit/ef8490d376c86856694a0a68ac4be0fab54334df))
+
 ## [1.4.7](https://github.com/AlignNetwork/align-sdk/compare/v1.4.6...v1.4.7) (2024-05-20)
 
 
