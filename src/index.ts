@@ -6,6 +6,7 @@ export { useUsers } from "./hooks/useUsers.js";
 export * from "./lib/abi/alignIdRegistryABI";
 export * from "./lib/abi/interactionStationABI";
 export * from "./lib/constants";
+export { alignTestnetV2 } from "./lib/constants.js";
 export { interactDefaults } from "./main.js";
 export { feed } from "./read/feed.js";
 export { profile } from "./read/profile.js";
