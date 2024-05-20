@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/AlignNetwork/align-sdk/compare/v1.4.0...v1.4.1) (2024-05-20)
+
+
+### Bug Fixes
+
+* added semantic release back in and cleaned up packages ([d42d3b8](https://github.com/AlignNetwork/align-sdk/commit/d42d3b8c7b8659b4781dee5ee86327e5e8e3177e))
+
 ## [1.3.17](https://github.com/AlignNetwork/align-sdk/compare/v1.3.16...v1.3.17) (2024-05-17)
 
 
