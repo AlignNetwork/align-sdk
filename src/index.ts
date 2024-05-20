@@ -1,14 +1,11 @@
 export { AlignDefaults } from "./dataNetwork/defaults.js";
 export { getContent, getPins } from "./dataNetwork/read.js";
 export { validate } from "./dataNetwork/validate.js";
-export { useFeed } from "./hooks/useFeed.js";
+export * from "./hooks";
+export { useInteractionsByTypeKey } from "./hooks/useInteractionsByTypeKey.js";
 export { useUsers } from "./hooks/useUsers.js";
 export * from "./lib/abi/alignIdRegistryABI";
 export * from "./lib/abi/interactionStationABI";
 export * from "./lib/constants";
 export { alignTestnetV2 } from "./lib/constants.js";
 export { interactDefaults } from "./main.js";
-export { feed } from "./read/feed.js";
-export { profile } from "./read/profile.js";
-export { user } from "./read/user.js";
-export { users } from "./read/users.js";

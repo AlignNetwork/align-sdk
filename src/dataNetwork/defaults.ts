@@ -2,6 +2,7 @@ export const AlignDefaults = {
   blog: {
     iTypeKey:
       "0x30abf47b1bc62b7c4a62363358e236cf55104f33cd9aa5b6d0766177ff04f450" as `0x${string}`,
+    iKey: "0x4bf7488a263c274e6a3297f0ac528e036c15c1af1088f51d73d6cf6cbe72848f" as `0x${string}`,
     parentCID:
       "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`,
     cid: "bafyreiacg4vethpa2dahznqir3txo7j3ys2vgc3zfk3makfjmdhbbgyzby",
@@ -19,6 +20,7 @@ export const AlignDefaults = {
   post: {
     iTypeKey:
       "0x37bc0487179bf0e5859e1e81de587362f08f1e99a4dd4818e7ec9db5acbe85d4" as `0x${string}`,
+    iKey: "0x4bf7488a263c274e6a3297f0ac528e036c15c1af1088f51d73d6cf6cbe72848f" as `0x${string}`,
     parentCID:
       "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`,
     cid: "bafyreibocgt3asopt2oqetfv5q5jdfnxg76v6bag73hnkbbhja7fp7xeum",
@@ -36,6 +38,7 @@ export const AlignDefaults = {
   dispute: {
     iTypeKey:
       "0x5ccef2e75faf813914ca81514683bb551f97b0dabb1a7b88078d8d047c8d71d1" as `0x${string}`,
+    iKey: "0x4bf7488a263c274e6a3297f0ac528e036c15c1af1088f51d73d6cf6cbe72848f" as `0x${string}`,
     parentCID:
       "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`,
     cid: "bafyreibmg53z2thea54g7enkdnq7lsiphe2o5d4yu24qoccwcdbnnd3bdq",
@@ -52,6 +55,7 @@ export const AlignDefaults = {
   points: {
     iTypeKey:
       "0xeb5b8c1f556f61bc01e9276ec4536dbe23e4240b8487374f984d6031e5cd21dc" as `0x${string}`,
+    iKey: "0x4bf7488a263c274e6a3297f0ac528e036c15c1af1088f51d73d6cf6cbe72848f" as `0x${string}`,
     parentCID:
       "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`,
     cid: "bafyreidnovk7f623pmuueex3p2icqcc2see22cwxxhkwfkscbuaajdnai4",

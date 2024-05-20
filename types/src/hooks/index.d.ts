@@ -1,2 +1,2 @@
-export { useFeed } from "./useFeed";
+export { useFeed } from "./useInteractionsByTypeKey";
 //# sourceMappingURL=index.d.ts.map

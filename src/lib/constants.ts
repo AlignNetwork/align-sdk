@@ -40,5 +40,5 @@ export const alignTestnetV2Constants = {
 
 export const alignUrls = {
   ipfs: "http://ipfs-dev.align.network",
-  indexer: "https://apidev-v5.align.network/",
+  indexer: "https://apidev-v6.align.network/",
 };
