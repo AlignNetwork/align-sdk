@@ -1,3 +1,10 @@
+## [1.4.9](https://github.com/AlignNetwork/align-sdk/compare/v1.4.8...v1.4.9) (2024-05-20)
+
+
+### Bug Fixes
+
+* updated Register event to not interfer with contract ownership event ([a2e7287](https://github.com/AlignNetwork/align-sdk/commit/a2e728730ebd89d7b7b430497160dd0181c9bcb2))
+
 ## [1.4.8](https://github.com/AlignNetwork/align-sdk/compare/v1.4.7...v1.4.8) (2024-05-20)
 
 
