@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/AlignNetwork/align-sdk/compare/v1.5.0...v1.5.1) (2024-05-20)
+
+
+### Bug Fixes
+
+* updated interaction defaults ([5d4e02a](https://github.com/AlignNetwork/align-sdk/commit/5d4e02a9f702eab6ff02f2d839c00f6b85bb7356))
+
 # [1.5.0](https://github.com/AlignNetwork/align-sdk/compare/v1.4.10...v1.5.0) (2024-05-20)
 
 
