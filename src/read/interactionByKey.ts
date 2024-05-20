@@ -29,8 +29,11 @@ export async function interactionsByKey(key: string): Promise<any> {
   }
 }
 
-export async function interactionsByKeyPage(pageParam: number): Promise<any> {
-  const url = `${apiUrl}/ikeypage/${pageParam}`;
+export async function interactionsByKeyPage(
+  key: string,
+  pageParam: number
+): Promise<any> {
+  const url = `${apiUrl}/ikeypage/${key}/${pageParam}`;
 
   try {
     const response = await fetch(url, {

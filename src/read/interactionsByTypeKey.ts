@@ -30,9 +30,10 @@ export async function interactionsByTypeKey(typeKey: string): Promise<any> {
 }
 
 export async function interactionsByTypeKeyPage(
+  typeKey: string,
   pageParam: number
 ): Promise<any> {
-  const url = `${apiUrl}/itypekeypage/${pageParam}`;
+  const url = `${apiUrl}/itypekeypage/${typeKey}/${pageParam}`;
 
   try {
     const response = await fetch(url, {
