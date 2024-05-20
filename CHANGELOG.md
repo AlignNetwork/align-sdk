@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/AlignNetwork/align-sdk/compare/v1.4.2...v1.4.3) (2024-05-20)
+
+
+### Bug Fixes
+
+* updated get pins for dataNetwork ([3861f1b](https://github.com/AlignNetwork/align-sdk/commit/3861f1b94642576e46c4b88e43e7f27bb41089fd))
+
 ## [1.4.2](https://github.com/AlignNetwork/align-sdk/compare/v1.4.1...v1.4.2) (2024-05-20)
 
 
