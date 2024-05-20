@@ -3,7 +3,7 @@ import { alignUrls } from "../lib";
 const dataNetworkUrl = alignUrls.ipfs;
 
 export async function getPins(): Promise<any> {
-  const res = await fetch(`${dataNetworkUrl}/pins`, {
+  const res = await fetch(`${dataNetworkUrl}/getpins`, {
     method: "POST",
   });
   const result = await res.json();
