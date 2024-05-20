@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/AlignNetwork/align-sdk/compare/v1.4.10...v1.5.0) (2024-05-20)
+
+
+### Features
+
+* added interactions indexer funtingions ([f35e4ce](https://github.com/AlignNetwork/align-sdk/commit/f35e4cedd3b36876c8cf0a48c2426a512864b518))
+
 ## [1.4.10](https://github.com/AlignNetwork/align-sdk/compare/v1.4.9...v1.4.10) (2024-05-20)
 
 
