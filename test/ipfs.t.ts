@@ -1,6 +1,6 @@
 // test validating the data
 import { expect } from "chai";
-import { validate } from "../src";
+import { getContent, validate } from "../src";
 import { AlignDefaults } from "../src/dataNetwork/defaults";
 import { upload } from "../src/dataNetwork/upload";
 import { ValidationError } from "../src/dataNetwork/validate";
@@ -76,5 +76,13 @@ describe("test uploading interaction to ipfs", () => {
     console.log(uploadResult);
     expect(uploadResult.error).to.be.false;
     expect(uploadResult.cid).to.be.a("string");
+  });
+});
+
+describe(" test getting cid from ipfs", () => {
+  it("should get cid", async () => {
+    const cid = "bafyreifoo4xnhb75675opkpkr5g6jrdxxjk5sutvmilprlqhx2wgt6thiu";
+    const result = await getContent(cid);
+    console.log(result);
   });
 });
