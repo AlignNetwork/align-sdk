@@ -1,3 +1,10 @@
+## [1.4.7](https://github.com/AlignNetwork/align-sdk/compare/v1.4.6...v1.4.7) (2024-05-20)
+
+
+### Bug Fixes
+
+* removed content type json from getContent ([a3e89ca](https://github.com/AlignNetwork/align-sdk/commit/a3e89ca7424357252dab4841436bee7bb4671f5a))
+
 ## [1.4.6](https://github.com/AlignNetwork/align-sdk/compare/v1.4.5...v1.4.6) (2024-05-20)
 
 
