@@ -1,3 +1,10 @@
+## [1.4.5](https://github.com/AlignNetwork/align-sdk/compare/v1.4.4...v1.4.5) (2024-05-20)
+
+
+### Bug Fixes
+
+* added align defaults to export ([482443f](https://github.com/AlignNetwork/align-sdk/commit/482443f27cfd087beaad76ee67cbfb4a542acccd))
+
 ## [1.4.4](https://github.com/AlignNetwork/align-sdk/compare/v1.4.3...v1.4.4) (2024-05-20)
 
 
