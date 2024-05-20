@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/AlignNetwork/align-sdk/compare/v1.4.1...v1.4.2) (2024-05-20)
+
+
+### Bug Fixes
+
+* updated get content ([1ebb938](https://github.com/AlignNetwork/align-sdk/commit/1ebb93864f2b73412ea4537d08edb3bf8a5c5875))
+
 ## [1.4.1](https://github.com/AlignNetwork/align-sdk/compare/v1.4.0...v1.4.1) (2024-05-20)
 
 
