@@ -17,9 +17,6 @@ export async function getContent(cid: string): Promise<any> {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      cid: cid,
-    }),
   });
   const result = await res.json();
   console.log(result);
