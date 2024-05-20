@@ -1,3 +1,10 @@
+## [1.4.10](https://github.com/AlignNetwork/align-sdk/compare/v1.4.9...v1.4.10) (2024-05-20)
+
+
+### Bug Fixes
+
+* removed console log from data network read ([902e1ba](https://github.com/AlignNetwork/align-sdk/commit/902e1baa5a4c047ac9a3edfd4376eb6e29ab1604))
+
 ## [1.4.9](https://github.com/AlignNetwork/align-sdk/compare/v1.4.8...v1.4.9) (2024-05-20)
 
 
