@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/AlignNetwork/align-sdk/compare/v1.4.3...v1.4.4) (2024-05-20)
+
+
+### Bug Fixes
+
+* added getPins export ([a1e2698](https://github.com/AlignNetwork/align-sdk/commit/a1e269889458b712c2f3f27c48c63abf6b672ac5))
+
 ## [1.4.3](https://github.com/AlignNetwork/align-sdk/compare/v1.4.2...v1.4.3) (2024-05-20)
 
 
