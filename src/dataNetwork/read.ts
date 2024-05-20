@@ -14,9 +14,6 @@ export async function getPins(): Promise<any> {
 export async function getContent(cid: string): Promise<any> {
   const res = await fetch(`${dataNetworkUrl}/ipfs/${cid}`, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
   });
   const result = await res.json();
   console.log(result);
