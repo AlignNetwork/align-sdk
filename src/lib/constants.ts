@@ -33,9 +33,9 @@ export const alignTestnetV2 = defineChain({
 
 export const alignTestnetV2Constants = {
   alignIdRegistry:
-    "0x742D903A24EBaa1ED55329186Dd1d5d5c0c329DA" as `0x${string}`,
+    "0x9b9d85e9eD23CB6AbCD3128CB70ECfdF6C406689" as `0x${string}`,
   interactionStation:
-    "0xE2dF15410B4F546eff1aF3abdF56317C651Ae853" as `0x${string}`,
+    "0x6F5Bfd716Cf7F7dB4A3e312D591d5b42275fF8c0" as `0x${string}`,
 };
 
 export const alignUrls = {
