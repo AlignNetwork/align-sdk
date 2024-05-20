@@ -32,8 +32,10 @@ export const alignTestnetV2 = defineChain({
 });
 
 export const alignTestnetV2Constants = {
-  aidr: "0xD821932b7d8F2DE2e53845E4b8ab66aD661cA130" as `0x${string}`,
-  intStation: "0xf581E6dfA593346E9c8163dD3Ed533ba9733A97a" as `0x${string}`,
+  alignIdRegistry:
+    "0x742D903A24EBaa1ED55329186Dd1d5d5c0c329DA" as `0x${string}`,
+  interactionStation:
+    "0xE2dF15410B4F546eff1aF3abdF56317C651Ae853" as `0x${string}`,
 };
 
 export const alignUrls = {

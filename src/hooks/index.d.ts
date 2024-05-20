@@ -1,1 +1,0 @@
-export { useFeed } from "./useFeed";

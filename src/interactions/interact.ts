@@ -9,7 +9,7 @@ import { alignTestnetV2, alignTestnetV2Constants } from "../lib/constants";
 
 import "fastestsmallesttextencoderdecoder";
 import { createWalletClient } from "viem";
-import { intStationABI } from "../lib/abi/intStationABI";
+import { interactionStationABI } from "../lib/abi/interactionStationABI";
 
 export class InteractError extends Error {
   constructor(message: string) {
@@ -19,9 +19,10 @@ export class InteractError extends Error {
 }
 
 export async function interactOnchain(
-  interactionTypeKey: `0x${string}`,
+  iTypeKey: `0x${string}`,
   toAlignId: bigint,
-  interaction: string,
+  iCID: string,
+  parentCID: `0x${string}`,
   account: Account
 ) {
   const walletClient = createWalletClient({
@@ -36,10 +37,10 @@ export async function interactOnchain(
 
   try {
     const { request } = await publicClient.simulateContract({
-      address: alignTestnetV2Constants.intStation,
-      abi: intStationABI,
+      address: alignTestnetV2Constants.interactionStation,
+      abi: interactionStationABI,
       functionName: "interact",
-      args: [toAlignId, interactionTypeKey, interaction],
+      args: [toAlignId, iTypeKey, iCID, parentCID],
       account: walletClient.account,
     });
     const hash = await walletClient.writeContract(request);

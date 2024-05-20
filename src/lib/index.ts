@@ -1,3 +1,3 @@
-export * from "./abi/aidrABI";
-export * from "./abi/intStationABI";
+export * from "./abi/alignIdRegistryABI";
+export * from "./abi/interactionStationABI";
 export * from "./constants";

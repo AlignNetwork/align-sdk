@@ -31,9 +31,10 @@ export async function interactDefaults(
     // get the interaction type key from the registry, unless provided
     //const interactionTypeKey = await getInteractionTypeKey();
     let res = await interactOnchain(
-      defaultFormat.interactionTypeKey,
+      defaultFormat.iTypeKey,
       toAlignId,
       uploadResult.cid,
+      defaultFormat.parentCID,
       account
     );
     return res;

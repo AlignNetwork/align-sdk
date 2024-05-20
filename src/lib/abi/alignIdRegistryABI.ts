@@ -1,4 +1,4 @@
-export const intStationABI = [
+export const alignIdRegistryABI = [
   {
     type: "constructor",
     inputs: [
@@ -9,10 +9,10 @@ export const intStationABI = [
   },
   {
     type: "function",
-    name: "addLink",
+    name: "addITypeCID",
     inputs: [
-      { name: "interactionTypeKey", type: "bytes32", internalType: "bytes32" },
-      { name: "newLink", type: "string", internalType: "string" },
+      { name: "iTypeKey", type: "bytes32", internalType: "bytes32" },
+      { name: "iTypeCID", type: "string", internalType: "string" },
     ],
     outputs: [],
     stateMutability: "nonpayable",
@@ -44,57 +44,50 @@ export const intStationABI = [
   },
   {
     type: "function",
-    name: "createInteractionType",
+    name: "createIType",
     inputs: [
       { name: "fungible", type: "bool", internalType: "bool" },
       { name: "onlyCreator", type: "bool", internalType: "bool" },
       { name: "name", type: "string", internalType: "string" },
-      { name: "link", type: "string", internalType: "string" },
-      { name: "referenceKeys", type: "bytes32[]", internalType: "bytes32[]" },
+      { name: "iTypeCID", type: "string", internalType: "string" },
+      { name: "parentKeys", type: "bytes32[]", internalType: "bytes32[]" },
     ],
     outputs: [{ name: "key", type: "bytes32", internalType: "bytes32" }],
     stateMutability: "nonpayable",
   },
   {
     type: "function",
-    name: "dispute",
-    inputs: [
-      {
-        name: "disputedInteractionKey",
-        type: "bytes32",
-        internalType: "bytes32",
-      },
-      { name: "disputeInteraction", type: "bytes32", internalType: "bytes32" },
-    ],
-    outputs: [],
-    stateMutability: "nonpayable",
-  },
-  {
-    type: "function",
-    name: "getInteractionFungible",
+    name: "getICIDFungible",
     inputs: [
       { name: "issuerAlignId", type: "uint256", internalType: "uint256" },
       { name: "toAlignId", type: "uint256", internalType: "uint256" },
-      { name: "interactionTypeKey", type: "bytes32", internalType: "bytes32" },
-      { name: "interactionData", type: "string", internalType: "string" },
+      { name: "iTypeKey", type: "bytes32", internalType: "bytes32" },
+      { name: "iCID", type: "string", internalType: "string" },
     ],
-    outputs: [{ name: "interaction", type: "string", internalType: "string" }],
+    outputs: [{ name: "exists", type: "bool", internalType: "bool" }],
     stateMutability: "view",
   },
   {
     type: "function",
-    name: "getInteractionNonFungible",
+    name: "getICIDNonFungible",
     inputs: [
       { name: "issuerAlignId", type: "uint256", internalType: "uint256" },
       { name: "toAlignId", type: "uint256", internalType: "uint256" },
-      { name: "interactionKey", type: "bytes32", internalType: "bytes32" },
+      { name: "iTypeKey", type: "bytes32", internalType: "bytes32" },
     ],
-    outputs: [{ name: "interaction", type: "string", internalType: "string" }],
+    outputs: [{ name: "exists", type: "bool", internalType: "bool" }],
     stateMutability: "view",
   },
   {
     type: "function",
-    name: "getInteractionTypeKey",
+    name: "getITypeCID",
+    inputs: [{ name: "iTypeKey", type: "bytes32", internalType: "bytes32" }],
+    outputs: [{ name: "iCID", type: "string", internalType: "string" }],
+    stateMutability: "view",
+  },
+  {
+    type: "function",
+    name: "getITypeKey",
     inputs: [
       { name: "issuerAlignId", type: "uint256", internalType: "uint256" },
       { name: "name", type: "string", internalType: "string" },
@@ -107,18 +100,20 @@ export const intStationABI = [
     name: "interact",
     inputs: [
       { name: "toAlignId", type: "uint256", internalType: "uint256" },
-      { name: "interactionTypeKey", type: "bytes32", internalType: "bytes32" },
-      { name: "interaction", type: "string", internalType: "string" },
+      { name: "iTypeKey", type: "bytes32", internalType: "bytes32" },
+      { name: "iCID", type: "string", internalType: "string" },
+      { name: "parentIKey", type: "bytes32", internalType: "bytes32" },
     ],
-    outputs: [],
+    outputs: [
+      { name: "iKey", type: "bytes32", internalType: "bytes32" },
+      { name: "fungibleKey", type: "bytes32", internalType: "bytes32" },
+    ],
     stateMutability: "nonpayable",
   },
   {
     type: "function",
-    name: "isinteractionTypeRegistered",
-    inputs: [
-      { name: "interactionKey", type: "bytes32", internalType: "bytes32" },
-    ],
+    name: "isITypeRegistered",
+    inputs: [{ name: "iTypeKey", type: "bytes32", internalType: "bytes32" }],
     outputs: [{ name: "", type: "bool", internalType: "bool" }],
     stateMutability: "view",
   },
@@ -179,10 +174,58 @@ export const intStationABI = [
   },
   {
     type: "event",
-    name: "Interacted",
+    name: "ITypeCIDAdded",
     inputs: [
       {
-        name: "interactionKey",
+        name: "iTypeKey",
+        type: "bytes32",
+        indexed: true,
+        internalType: "bytes32",
+      },
+      { name: "iCID", type: "string", indexed: false, internalType: "string" },
+    ],
+    anonymous: false,
+  },
+  {
+    type: "event",
+    name: "ITypeRegistered",
+    inputs: [
+      {
+        name: "iTypeKey",
+        type: "bytes32",
+        indexed: true,
+        internalType: "bytes32",
+      },
+      {
+        name: "issuerAlignId",
+        type: "uint256",
+        indexed: false,
+        internalType: "uint256",
+      },
+      { name: "name", type: "string", indexed: false, internalType: "string" },
+      {
+        name: "iTypeCID",
+        type: "string",
+        indexed: false,
+        internalType: "string",
+      },
+      { name: "fungible", type: "bool", indexed: false, internalType: "bool" },
+      {
+        name: "parentKeys",
+        type: "bytes32[]",
+        indexed: false,
+        internalType: "bytes32[]",
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: "event",
+    name: "InteractionAdded",
+    inputs: [
+      { name: "iKey", type: "bytes32", indexed: true, internalType: "bytes32" },
+      {
+        name: "iTypeKey",
         type: "bytes32",
         indexed: true,
         internalType: "bytes32",
@@ -199,84 +242,18 @@ export const intStationABI = [
         indexed: false,
         internalType: "uint256",
       },
-      { name: "data", type: "string", indexed: false, internalType: "string" },
+      { name: "iCID", type: "string", indexed: false, internalType: "string" },
       {
-        name: "attestationKey2",
+        name: "fungibleKey",
         type: "bytes32",
         indexed: false,
         internalType: "bytes32",
       },
-    ],
-    anonymous: false,
-  },
-  {
-    type: "event",
-    name: "InteractionDisputed",
-    inputs: [
       {
-        name: "interactionKey",
-        type: "bytes32",
-        indexed: true,
-        internalType: "bytes32",
-      },
-      {
-        name: "interactionTypeKeyFungible",
-        type: "bytes32",
-        indexed: true,
-        internalType: "bytes32",
-      },
-      {
-        name: "disputeInteraction",
+        name: "parentIKey",
         type: "bytes32",
         indexed: false,
         internalType: "bytes32",
-      },
-    ],
-    anonymous: false,
-  },
-  {
-    type: "event",
-    name: "InteractionTypeLinkAdded",
-    inputs: [
-      {
-        name: "interactionTypeKey",
-        type: "bytes32",
-        indexed: true,
-        internalType: "bytes32",
-      },
-      {
-        name: "newLink",
-        type: "string",
-        indexed: false,
-        internalType: "string",
-      },
-    ],
-    anonymous: false,
-  },
-  {
-    type: "event",
-    name: "InteractionTypeRegistered",
-    inputs: [
-      { name: "key", type: "bytes32", indexed: true, internalType: "bytes32" },
-      {
-        name: "issuerAlignId",
-        type: "uint256",
-        indexed: false,
-        internalType: "uint256",
-      },
-      {
-        name: "interaction",
-        type: "string",
-        indexed: false,
-        internalType: "string",
-      },
-      { name: "link", type: "string", indexed: false, internalType: "string" },
-      { name: "fungible", type: "bool", indexed: false, internalType: "bool" },
-      {
-        name: "referenceKeys",
-        type: "bytes32[]",
-        indexed: false,
-        internalType: "bytes32[]",
       },
     ],
     anonymous: false,
