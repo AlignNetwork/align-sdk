@@ -7,7 +7,6 @@ export async function getPins(): Promise<any> {
     method: "POST",
   });
   const result = await res.json();
-  console.log(result);
   return result;
 }
 
@@ -16,6 +15,5 @@ export async function getContent(cid: string): Promise<any> {
     method: "GET",
   });
   const result = await res.json();
-  console.log(result);
   return result;
 }
