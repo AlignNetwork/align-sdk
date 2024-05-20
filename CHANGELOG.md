@@ -1,3 +1,10 @@
+## [1.4.6](https://github.com/AlignNetwork/align-sdk/compare/v1.4.5...v1.4.6) (2024-05-20)
+
+
+### Bug Fixes
+
+* added align testnet v2 chain to export ([b8a3370](https://github.com/AlignNetwork/align-sdk/commit/b8a33706b45f4e1947e5649119d74e5d2dbb6359))
+
 ## [1.4.5](https://github.com/AlignNetwork/align-sdk/compare/v1.4.4...v1.4.5) (2024-05-20)
 
 
