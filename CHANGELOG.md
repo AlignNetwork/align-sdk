@@ -1,3 +1,10 @@
+## [1.5.5](https://github.com/AlignNetwork/align-sdk/compare/v1.5.4...v1.5.5) (2024-05-21)
+
+
+### Bug Fixes
+
+* updated indexer url to be v7 ([e2ce4ff](https://github.com/AlignNetwork/align-sdk/commit/e2ce4fff4a119e71ff3cb4c36129b222cf7c984f))
+
 ## [1.5.4](https://github.com/AlignNetwork/align-sdk/compare/v1.5.3...v1.5.4) (2024-05-21)
 
 
