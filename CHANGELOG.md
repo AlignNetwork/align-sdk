@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/AlignNetwork/align-sdk/compare/v1.5.2...v1.5.3) (2024-05-21)
+
+
+### Bug Fixes
+
+* added nextr page to interactionbytypekey page ([afc76e1](https://github.com/AlignNetwork/align-sdk/commit/afc76e16f53f8f969c028f16a915ae9342e481a0))
+
 ## [1.5.2](https://github.com/AlignNetwork/align-sdk/compare/v1.5.1...v1.5.2) (2024-05-21)
 
 
