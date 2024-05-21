@@ -1,3 +1,10 @@
+## [1.5.7](https://github.com/AlignNetwork/align-sdk/compare/v1.5.6...v1.5.7) (2024-05-21)
+
+
+### Bug Fixes
+
+* exported upload ([39f4039](https://github.com/AlignNetwork/align-sdk/commit/39f4039bdff3f0dadfbb77a15750b7882a4fe235))
+
 ## [1.5.6](https://github.com/AlignNetwork/align-sdk/compare/v1.5.5...v1.5.6) (2024-05-21)
 
 
