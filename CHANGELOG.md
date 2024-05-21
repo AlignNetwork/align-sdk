@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/AlignNetwork/align-sdk/compare/v1.5.3...v1.5.4) (2024-05-21)
+
+
+### Bug Fixes
+
+* removed trailing slash in alignURls for indexer ([f1d31eb](https://github.com/AlignNetwork/align-sdk/commit/f1d31eb8e46344fd4e9950100bb4231427ae060a))
+
 ## [1.5.3](https://github.com/AlignNetwork/align-sdk/compare/v1.5.2...v1.5.3) (2024-05-21)
 
 
