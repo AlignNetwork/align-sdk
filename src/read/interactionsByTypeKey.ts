@@ -51,7 +51,9 @@ export async function interactionsByTypeKeyPage(
     const data = await response.json();
     return {
       //@ts-ignore
-      data,
+      data: data.data,
+      //@ts-ignore
+      nextPage: data.nextPage,
     };
   } catch (error) {
     console.error("Fetching align id failed:", error);
