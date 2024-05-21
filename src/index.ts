@@ -10,3 +10,5 @@ export * from "./lib/constants";
 export { alignTestnetV2 } from "./lib/constants.js";
 export { interactDefaults } from "./main.js";
 export * from "./read";
+
+export * from "./dataNetwork/upload.js";
