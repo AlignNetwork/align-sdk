@@ -5,12 +5,12 @@ import {
   interactionsByKeyPage,
 } from "../read/interactionByKey";
 
-export function useInteractionsByKey(pageParam: number | null) {
+export function useInteractionsByKey(key: string, pageParam: number | null) {
   return useInfiniteQuery({
     queryKey: ["interactionByKeyPage"],
     initialPageParam: pageParam,
     queryFn: async ({ pageParam = null }) => {
-      return await interactionsByKeyPage(pageParam);
+      return await interactionsByKeyPage(key, pageParam);
     },
     getNextPageParam: (lastPage: any) => lastPage.nextPage,
   });
