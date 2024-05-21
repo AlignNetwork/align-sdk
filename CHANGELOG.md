@@ -1,3 +1,11 @@
+## [1.5.2](https://github.com/AlignNetwork/align-sdk/compare/v1.5.1...v1.5.2) (2024-05-21)
+
+
+### Bug Fixes
+
+* added sorting to pagination for ikey and itypekey ([6ac37e6](https://github.com/AlignNetwork/align-sdk/commit/6ac37e6d29526ddc38d27f60390fc691d8eadb8a))
+* ts error ([ed45c3b](https://github.com/AlignNetwork/align-sdk/commit/ed45c3be95bc8f5face5baa7b4ee1aeea261232d))
+
 ## [1.5.1](https://github.com/AlignNetwork/align-sdk/compare/v1.5.0...v1.5.1) (2024-05-20)
 
 
