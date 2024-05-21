@@ -1,3 +1,11 @@
+## [1.5.6](https://github.com/AlignNetwork/align-sdk/compare/v1.5.5...v1.5.6) (2024-05-21)
+
+
+### Bug Fixes
+
+* added exports for interactions ([f0f1aa5](https://github.com/AlignNetwork/align-sdk/commit/f0f1aa5facf03de47aee233f0b780c22f7106752))
+* added in creating an interaction type ([8577aa9](https://github.com/AlignNetwork/align-sdk/commit/8577aa9a9c6c9ed981cbd39408ac9f2185c3dad2))
+
 ## [1.5.5](https://github.com/AlignNetwork/align-sdk/compare/v1.5.4...v1.5.5) (2024-05-21)
 
 
