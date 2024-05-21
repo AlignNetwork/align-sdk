@@ -17,7 +17,7 @@ type UploadResponse = {
 };
 
 export async function upload(data: {
-  [key: string]: string;
+  [key: string]: any;
 }): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
   const res = await fetch(`${dataNetworkUrl}/upload`, {
     method: "POST",
@@ -28,6 +28,7 @@ export async function upload(data: {
   });
   let result = (await res.json()) as UploadResponse;
   if (result.error) {
+    console.log(result);
     throw new UploadError(result.result);
   }
   return {

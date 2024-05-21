@@ -18,11 +18,10 @@ export class InteractError extends Error {
   }
 }
 
-export async function interactOnchain(
-  iTypeKey: `0x${string}`,
-  toAlignId: bigint,
+// run on client side
+export async function createInteractionType(
   iCID: string,
-  parentKeys: `0x${string}`,
+  parentKey: [`0x${string}`],
   account: Account
 ) {
   const walletClient = createWalletClient({
@@ -39,8 +38,8 @@ export async function interactOnchain(
     const { request } = await publicClient.simulateContract({
       address: alignTestnetV2Constants.interactionStation,
       abi: interactionStationABI,
-      functionName: "interact",
-      args: [toAlignId, iTypeKey, iCID, parentKeys],
+      functionName: "createIType",
+      args: [false, true, "My Blog", iCID, parentKey],
       account: walletClient.account,
     });
     const hash = await walletClient.writeContract(request);

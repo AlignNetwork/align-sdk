@@ -34,7 +34,7 @@ export async function interactDefaults(
       defaultFormat.iTypeKey,
       toAlignId,
       uploadResult.cid,
-      defaultFormat.parentCID,
+      defaultFormat.parentKeys,
       account
     );
     return res;
