@@ -1,11 +1,8 @@
 "use client";
-import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
-import {
-  interactionsByTypeKey,
-  interactionsByTypeKeyPage,
-} from "../read/interactionsByTypeKey";
+import { useInfiniteQuery } from "@tanstack/react-query";
+import { interactionsByTypeKeyPage } from "../read/interactionsByTypeKey";
 
-export function useInteractionsByTypeKey(
+export function useInteractionsByTypeKeyPage(
   typeKey: string,
   pageParam: number | null
 ) {
@@ -16,14 +13,5 @@ export function useInteractionsByTypeKey(
       return await interactionsByTypeKeyPage(typeKey, pageParam);
     },
     getNextPageParam: (lastPage: any) => lastPage.nextPage,
-  });
-}
-
-export function useInteractionsByTypeKeyPage(typeKey: string) {
-  return useQuery({
-    queryKey: ["interactionByTypeKey"],
-    queryFn: async () => {
-      return await interactionsByTypeKey(typeKey);
-    },
   });
 }

@@ -1,8 +1,2 @@
-export {
-  useInteractionsByKey,
-  useInteractionsByKeyPage,
-} from "./useInteractionsByKey";
-export {
-  useInteractionsByTypeKey,
-  useInteractionsByTypeKeyPage,
-} from "./useInteractionsByTypeKey";
+export { useInteractionsByKeyPage } from "./useInteractionsByKey";
+export { useInteractionsByTypeKeyPage } from "./useInteractionsByTypeKey";
