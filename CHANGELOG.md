@@ -1,3 +1,10 @@
+## [1.5.9](https://github.com/AlignNetwork/align-sdk/compare/v1.5.8...v1.5.9) (2024-05-22)
+
+
+### Bug Fixes
+
+* type in getId ([e99b3e8](https://github.com/AlignNetwork/align-sdk/commit/e99b3e83538bab7067db9bf3a176d24f4df6c971))
+
 ## [1.5.8](https://github.com/AlignNetwork/align-sdk/compare/v1.5.7...v1.5.8) (2024-05-22)
 
 
