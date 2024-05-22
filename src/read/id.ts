@@ -2,7 +2,7 @@ import { alignUrls } from "../lib";
 
 const apiUrl = alignUrls.indexer;
 
-export async function getId(address: "string"): Promise<any> {
+export async function getId(address: `0x${string}`): Promise<any> {
   const url = `${apiUrl}/id/${address}`;
 
   try {
