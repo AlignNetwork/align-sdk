@@ -1,3 +1,11 @@
+## [1.5.8](https://github.com/AlignNetwork/align-sdk/compare/v1.5.7...v1.5.8) (2024-05-22)
+
+
+### Bug Fixes
+
+* added id route from indexer ([16a0148](https://github.com/AlignNetwork/align-sdk/commit/16a014800db30eebb6d78ad1104039ebe4dac8df))
+* updated hooks ([cd6ae24](https://github.com/AlignNetwork/align-sdk/commit/cd6ae246958119f5d6b9eb41c6aa0d048df6a6e5))
+
 ## [1.5.7](https://github.com/AlignNetwork/align-sdk/compare/v1.5.6...v1.5.7) (2024-05-21)
 
 
