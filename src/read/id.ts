@@ -2,18 +2,12 @@ import { alignUrls } from "../lib";
 
 const apiUrl = alignUrls.indexer;
 
-export async function interactionsByKeyPage(
-  key: string,
-  pageParam: number
-): Promise<any> {
-  const url = `${apiUrl}/ikeypage/${key}/${pageParam}`;
+export async function getId(address: "string"): Promise<any> {
+  const url = `${apiUrl}/id/${address}`;
 
   try {
     const response = await fetch(url, {
       method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
     });
 
     if (!response.ok) {
@@ -25,8 +19,6 @@ export async function interactionsByKeyPage(
     return {
       //@ts-ignore
       data: data,
-      //@ts-ignore
-      nextPage: data.nextPage,
     };
   } catch (error) {
     console.error("Fetching align id failed:", error);

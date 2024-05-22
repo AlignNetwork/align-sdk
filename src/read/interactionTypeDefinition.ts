@@ -2,11 +2,10 @@ import { alignUrls } from "../lib";
 
 const apiUrl = alignUrls.indexer;
 
-export async function interactionsByKeyPage(
-  key: string,
-  pageParam: number
+export async function interactionTypeKeyDefinition(
+  typeKey: string
 ): Promise<any> {
-  const url = `${apiUrl}/ikeypage/${key}/${pageParam}`;
+  const url = `${apiUrl}/itype/${typeKey}`;
 
   try {
     const response = await fetch(url, {
@@ -24,9 +23,8 @@ export async function interactionsByKeyPage(
     const data = await response.json();
     return {
       //@ts-ignore
-      data: data,
+      data: data.data,
       //@ts-ignore
-      nextPage: data.nextPage,
     };
   } catch (error) {
     console.error("Fetching align id failed:", error);
