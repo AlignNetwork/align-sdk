@@ -16,10 +16,7 @@ export async function getId(address: `0x${string}`): Promise<any> {
 
     // Assuming the API returns the data array directly
     const data = await response.json();
-    return {
-      //@ts-ignore
-      data: data,
-    };
+    return data;
   } catch (error) {
     console.error("Fetching align id failed:", error);
     throw error; // Re-throw the error if you want calling code to handle it
