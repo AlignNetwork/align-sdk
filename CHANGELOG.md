@@ -1,3 +1,10 @@
+## [1.5.12](https://github.com/AlignNetwork/align-sdk/compare/v1.5.11...v1.5.12) (2024-05-22)
+
+
+### Bug Fixes
+
+* fixed id to only return data ([6c0920b](https://github.com/AlignNetwork/align-sdk/commit/6c0920b8895912e60c440e21c6f559dc92ddce94))
+
 ## [1.5.11](https://github.com/AlignNetwork/align-sdk/compare/v1.5.10...v1.5.11) (2024-05-22)
 
 
