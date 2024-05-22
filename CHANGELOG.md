@@ -1,3 +1,10 @@
+## [1.5.10](https://github.com/AlignNetwork/align-sdk/compare/v1.5.9...v1.5.10) (2024-05-22)
+
+
+### Bug Fixes
+
+* added get alignid hook ([722d1a4](https://github.com/AlignNetwork/align-sdk/commit/722d1a4ad44f1313665c08cc970341393ec1ca07))
+
 ## [1.5.9](https://github.com/AlignNetwork/align-sdk/compare/v1.5.8...v1.5.9) (2024-05-22)
 
 
