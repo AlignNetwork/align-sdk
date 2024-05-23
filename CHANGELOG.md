@@ -1,3 +1,10 @@
+## [1.5.14](https://github.com/AlignNetwork/align-sdk/compare/v1.5.13...v1.5.14) (2024-05-23)
+
+
+### Bug Fixes
+
+* added itype by id and by key routes ([e9d8260](https://github.com/AlignNetwork/align-sdk/commit/e9d8260a6c94518de704b386cb25818978530574))
+
 ## [1.5.13](https://github.com/AlignNetwork/align-sdk/compare/v1.5.12...v1.5.13) (2024-05-23)
 
 
