@@ -1,3 +1,5 @@
+export { iTypeByAlignId } from "./iTypeById.js";
+export { iTypeByAlignIdAndKey } from "./iTypeByIdAndKey.js";
 export { getId } from "./id.js";
 export { interactionsByKeyPage } from "./interactionByKey.js";
 export { interactionTypeKeyDefinition } from "./interactionTypeDefinition.js";
