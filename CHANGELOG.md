@@ -1,3 +1,10 @@
+## [1.5.13](https://github.com/AlignNetwork/align-sdk/compare/v1.5.12...v1.5.13) (2024-05-23)
+
+
+### Bug Fixes
+
+* updated api url ([89e1072](https://github.com/AlignNetwork/align-sdk/commit/89e107229b671dae8e5a4aa7b666300e5edcd7df))
+
 ## [1.5.12](https://github.com/AlignNetwork/align-sdk/compare/v1.5.11...v1.5.12) (2024-05-22)
 
 
