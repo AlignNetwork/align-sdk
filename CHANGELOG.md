@@ -1,3 +1,10 @@
+## [1.5.15](https://github.com/AlignNetwork/align-sdk/compare/v1.5.14...v1.5.15) (2024-05-23)
+
+
+### Bug Fixes
+
+* added get by parent type ([ddfe7cf](https://github.com/AlignNetwork/align-sdk/commit/ddfe7cf4108f277e310d290114f24a7dd6162a13))
+
 ## [1.5.14](https://github.com/AlignNetwork/align-sdk/compare/v1.5.13...v1.5.14) (2024-05-23)
 
 
