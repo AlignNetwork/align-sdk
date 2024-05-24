@@ -1,3 +1,10 @@
+## [1.5.17](https://github.com/AlignNetwork/align-sdk/compare/v1.5.16...v1.5.17) (2024-05-24)
+
+
+### Bug Fixes
+
+* fixed itypebyalignidandkey ([447006f](https://github.com/AlignNetwork/align-sdk/commit/447006f63bf6d545b2517253036a62fcd19ec8a0))
+
 ## [1.5.16](https://github.com/AlignNetwork/align-sdk/compare/v1.5.15...v1.5.16) (2024-05-24)
 
 
