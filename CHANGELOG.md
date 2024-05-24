@@ -1,3 +1,10 @@
+## [1.5.20](https://github.com/AlignNetwork/align-sdk/compare/v1.5.19...v1.5.20) (2024-05-24)
+
+
+### Bug Fixes
+
+* new route to get interactions by align id and type key ([b9006fc](https://github.com/AlignNetwork/align-sdk/commit/b9006fc470108732ec4e50758ce24fd7eeeca118))
+
 ## [1.5.19](https://github.com/AlignNetwork/align-sdk/compare/v1.5.18...v1.5.19) (2024-05-24)
 
 
