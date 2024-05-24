@@ -1,3 +1,10 @@
+## [1.5.19](https://github.com/AlignNetwork/align-sdk/compare/v1.5.18...v1.5.19) (2024-05-24)
+
+
+### Bug Fixes
+
+* updated profile default ([d69d561](https://github.com/AlignNetwork/align-sdk/commit/d69d561cfb8b039a3dd7383801fa39f786718ef0))
+
 ## [1.5.18](https://github.com/AlignNetwork/align-sdk/compare/v1.5.17...v1.5.18) (2024-05-24)
 
 
