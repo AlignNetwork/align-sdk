@@ -70,10 +70,10 @@ export const AlignDefaults = {
   },
   profile: {
     iTypeKey:
-      "0xb6d1f1aa465d29f35034cd29eaacc41f1841ea6d4f648d5b1f4541ac0cc731bd" as `0x${string}`,
+      "0xf6a04589a38e84a03095275c1c55dc95f65dd9dda012058024846a53a55e2b2a" as `0x${string}`,
     iKey: "0xb6d1f1aa465d29f35034cd29eaacc41f1841ea6d4f648d5b1f4541ac0cc731bd" as `0x${string}`,
     parentKeys:
-      "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`,
+      "0xb6d1f1aa465d29f35034cd29eaacc41f1841ea6d4f648d5b1f4541ac0cc731bd" as `0x${string}`,
     cid: "bafyreiepkdmnbw66cqz4jqg4uukuhxopbgl4jspyx37rowtsf25b7oywh4",
     version: "0.1.0",
     name: "align profile",
