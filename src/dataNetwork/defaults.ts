@@ -55,7 +55,7 @@ export const AlignDefaults = {
   points: {
     iTypeKey:
       "0xeb5b8c1f556f61bc01e9276ec4536dbe23e4240b8487374f984d6031e5cd21dc" as `0x${string}`,
-    iKey: "0x4bf7488a263c274e6a3297f0ac528e036c15c1af1088f51d73d6cf6cbe72848f" as `0x${string}`,
+    iKey: "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`,
     parentKeys:
       "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`,
     cid: "bafyreidnovk7f623pmuueex3p2icqcc2see22cwxxhkwfkscbuaajdnai4",
@@ -70,10 +70,10 @@ export const AlignDefaults = {
   },
   profile: {
     iTypeKey:
-      "0xf6a04589a38e84a03095275c1c55dc95f65dd9dda012058024846a53a55e2b2a" as `0x${string}`,
+      "0xb6d1f1aa465d29f35034cd29eaacc41f1841ea6d4f648d5b1f4541ac0cc731bd" as `0x${string}`,
     iKey: "0xb6d1f1aa465d29f35034cd29eaacc41f1841ea6d4f648d5b1f4541ac0cc731bd" as `0x${string}`,
     parentKeys:
-      "0xb6d1f1aa465d29f35034cd29eaacc41f1841ea6d4f648d5b1f4541ac0cc731bd" as `0x${string}`,
+      "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`,
     cid: "bafyreiepkdmnbw66cqz4jqg4uukuhxopbgl4jspyx37rowtsf25b7oywh4",
     version: "0.1.0",
     name: "align profile",
