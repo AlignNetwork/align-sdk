@@ -6,7 +6,7 @@ export async function iTypeByAlignIdAndKey(
   alignId: string,
   iTypeKey: string
 ): Promise<any> {
-  const url = `${apiUrl}/itypebyid/${alignId}/${iTypeKey}`;
+  const url = `${apiUrl}/itypebyidandkey/${alignId}/${iTypeKey}`;
 
   try {
     const response = await fetch(url, {
