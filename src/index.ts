@@ -1,5 +1,6 @@
 export { AlignDefaults } from "./dataNetwork/defaults.js";
 export { getContent, getPins } from "./dataNetwork/read.js";
+export { verifySignature } from "./dataNetwork/signature.js";
 export { validate } from "./dataNetwork/validate.js";
 export * from "./hooks";
 export { createInteractionType } from "./interactions/createInteractionType.js";
