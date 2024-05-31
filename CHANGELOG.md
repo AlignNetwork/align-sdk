@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/AlignNetwork/align-sdk/compare/v1.5.20...v1.6.0) (2024-05-31)
+
+
+### Features
+
+* added signature check for alignid ([a7f498f](https://github.com/AlignNetwork/align-sdk/commit/a7f498f6cd1221f165673767290e31231eaa0927))
+
 ## [1.5.20](https://github.com/AlignNetwork/align-sdk/compare/v1.5.19...v1.5.20) (2024-05-24)
 
 
