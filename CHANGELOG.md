@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/AlignNetwork/align-sdk/compare/v1.6.0...v1.6.1) (2024-05-31)
+
+
+### Bug Fixes
+
+* added signature field to upload ([d5834ba](https://github.com/AlignNetwork/align-sdk/commit/d5834ba8fb27e1c1c2e3edd5728916f57994d09f))
+
 # [1.6.0](https://github.com/AlignNetwork/align-sdk/compare/v1.5.20...v1.6.0) (2024-05-31)
 
 

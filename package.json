@@ -1,6 +1,6 @@
 {
   "name": "@align-network/align-sdk",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "author": "0xglu",
   "main": "./dist/src/index.js",
   "types": "./dist/types/src/index.d.ts",
