@@ -16,15 +16,19 @@ type UploadResponse = {
   error: boolean;
 };
 
-export async function upload(data: {
-  [key: string]: any;
-}): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
+export async function upload(
+  data: {
+    [key: string]: any;
+  },
+  signature: string
+): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
+  const dataToUpload = { ...data, signature: signature };
   const res = await fetch(`${dataNetworkUrl}/upload`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(data),
+    body: JSON.stringify(dataToUpload),
   });
   let result = (await res.json()) as UploadResponse;
   if (result.error) {

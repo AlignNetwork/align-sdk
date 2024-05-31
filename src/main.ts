@@ -19,7 +19,8 @@ export async function interactDefaults(
   data: { [key: string]: string },
   toAlignId: bigint,
   defaultType: keyof typeof AlignDefaults,
-  account: Account
+  account: Account,
+  signature: string
 ): Promise<{ success: boolean; receipt?: TransactionReceipt | Error }> {
   try {
     // search AlignDefaults for the defaultType
@@ -27,7 +28,7 @@ export async function interactDefaults(
     // validte the incoming data is in the correct format
     await validate(data, defaultFormat);
     // upload the data to IPFS, throws error if it fails
-    const uploadResult = await upload(data);
+    const uploadResult = await upload(data, signature);
     // get the interaction type key from the registry, unless provided
     //const interactionTypeKey = await getInteractionTypeKey();
     let res = await interactOnchain(

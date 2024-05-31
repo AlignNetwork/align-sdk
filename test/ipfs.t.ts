@@ -72,7 +72,7 @@ describe("test uploading interaction to ipfs", () => {
     const defaultFormat = AlignDefaults["post"];
     // validte the incoming data is in the correct format
     await validate(data, defaultFormat);
-    const uploadResult = await upload(data);
+    const uploadResult = await upload(data, "");
     console.log(uploadResult);
     expect(uploadResult.error).to.be.false;
     expect(uploadResult.cid).to.be.a("string");

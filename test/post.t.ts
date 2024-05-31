@@ -15,7 +15,7 @@ describe("test create post", () => {
     // validte the incoming data is in the correct format
     const PRIVATE_KEY = process.env.PRIVATE_KEY as `0x${string}`;
     const account = privateKeyToAccount(PRIVATE_KEY as `0x${string}`);
-    let res = await interactDefaults(data, 1n, "post", account);
+    let res = await interactDefaults(data, 1n, "post", account, "");
     console.log(res.receipt);
     expect(res.success).to.be.true;
   });
