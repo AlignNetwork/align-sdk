@@ -5,7 +5,7 @@ export async function verifySignature(
   signature: `0x${string}` | undefined
 ): Promise<{ error: boolean; message: string }> {
   if (!signature) throw new Error("No signature provided");
-  const message = `Uploading to Align Network`;
+  const message = `Upload to Align Network`;
   // get align id of the user
   const address = await recoverMessageAddress({
     message: message,
