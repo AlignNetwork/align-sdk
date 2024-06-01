@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/AlignNetwork/align-sdk/compare/v1.6.1...v1.7.0) (2024-06-01)
+
+
+### Features
+
+* updated ipfs to main ([44972de](https://github.com/AlignNetwork/align-sdk/commit/44972de799cd8e0d9e2389e80ddeee2bfe8f9221))
+
 ## [1.6.1](https://github.com/AlignNetwork/align-sdk/compare/v1.6.0...v1.6.1) (2024-05-31)
 
 
