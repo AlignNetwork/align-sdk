@@ -52,5 +52,5 @@ export const alignContracts = {
 
 export const alignUrls = {
   ipfs: "http://ipfs.align.network",
-  indexer: "https://apidev-v8.align.network",
+  indexer: "https://apidev-v9.align.network",
 };
