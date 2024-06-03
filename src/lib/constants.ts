@@ -1,5 +1,4 @@
 import { defineChain } from "viem";
-
 /**
  * @deprecated The method should not be used
  */
@@ -34,7 +33,17 @@ export const alignTestnetV2 = defineChain({
   testnet: true,
 });
 
+/**
+ * @deprecated Depreciating align testnet v2 constants in favor of alignContracts
+ */
 export const alignTestnetV2Constants = {
+  alignIdRegistry:
+    "0xaE57e1B93DA10a7B5e746B2d17B0b3c7D90B2dDa" as `0x${string}`,
+  interactionStation:
+    "0xEe8710c0B14155541E151783A8C76422d0d5a676" as `0x${string}`,
+};
+
+export const alignContracts = {
   alignIdRegistry:
     "0xaE57e1B93DA10a7B5e746B2d17B0b3c7D90B2dDa" as `0x${string}`,
   interactionStation:

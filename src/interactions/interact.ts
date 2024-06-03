@@ -5,7 +5,8 @@ import {
   http,
   type Account,
 } from "viem";
-import { alignTestnetV2, alignTestnetV2Constants } from "../lib/constants";
+import { arbitrumSepolia } from "viem/chains";
+import { alignContracts } from "../lib/constants";
 
 import "fastestsmallesttextencoderdecoder";
 import { createWalletClient } from "viem";
@@ -27,17 +28,17 @@ export async function interactOnchain(
 ) {
   const walletClient = createWalletClient({
     account: account,
-    chain: alignTestnetV2,
-    transport: http(alignTestnetV2.rpcUrls.default.http[0]),
+    chain: arbitrumSepolia,
+    transport: http(arbitrumSepolia.rpcUrls.default.http[0]),
   });
   const publicClient = createPublicClient({
-    chain: alignTestnetV2,
-    transport: http(alignTestnetV2.rpcUrls.default.http[0]),
+    chain: arbitrumSepolia,
+    transport: http(arbitrumSepolia.rpcUrls.default.http[0]),
   });
 
   try {
     const { request } = await publicClient.simulateContract({
-      address: alignTestnetV2Constants.interactionStation,
+      address: alignContracts.interactionStation,
       abi: interactionStationABI,
       functionName: "interact",
       args: [toAlignId, iTypeKey, iCID, parentKeys],

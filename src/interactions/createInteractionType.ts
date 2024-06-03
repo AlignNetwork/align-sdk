@@ -5,10 +5,11 @@ import {
   http,
   type Account,
 } from "viem";
-import { alignTestnetV2, alignTestnetV2Constants } from "../lib/constants";
+import { alignContracts } from "../lib/constants";
 
 import "fastestsmallesttextencoderdecoder";
 import { createWalletClient } from "viem";
+import { arbitrumSepolia } from "viem/chains";
 import { interactionStationABI } from "../lib/abi/interactionStationABI";
 
 export class InteractError extends Error {
@@ -26,17 +27,17 @@ export async function createInteractionType(
 ) {
   const walletClient = createWalletClient({
     account: account,
-    chain: alignTestnetV2,
-    transport: http(alignTestnetV2.rpcUrls.default.http[0]),
+    chain: arbitrumSepolia,
+    transport: http(arbitrumSepolia.rpcUrls.default.http[0]),
   });
   const publicClient = createPublicClient({
-    chain: alignTestnetV2,
-    transport: http(alignTestnetV2.rpcUrls.default.http[0]),
+    chain: arbitrumSepolia,
+    transport: http(arbitrumSepolia.rpcUrls.default.http[0]),
   });
 
   try {
     const { request } = await publicClient.simulateContract({
-      address: alignTestnetV2Constants.interactionStation,
+      address: alignContracts.interactionStation,
       abi: interactionStationABI,
       functionName: "createIType",
       args: [false, true, "My Blog", iCID, parentKey],
