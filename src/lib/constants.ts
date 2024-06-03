@@ -1,5 +1,8 @@
 import { defineChain } from "viem";
 
+/**
+ * @deprecated The method should not be used
+ */
 export const alignTestnetV2 = defineChain({
   id: 472382,
   name: "Align Testnet v2",
@@ -33,9 +36,9 @@ export const alignTestnetV2 = defineChain({
 
 export const alignTestnetV2Constants = {
   alignIdRegistry:
-    "0x9b9d85e9eD23CB6AbCD3128CB70ECfdF6C406689" as `0x${string}`,
+    "0xaE57e1B93DA10a7B5e746B2d17B0b3c7D90B2dDa" as `0x${string}`,
   interactionStation:
-    "0x6F5Bfd716Cf7F7dB4A3e312D591d5b42275fF8c0" as `0x${string}`,
+    "0xEe8710c0B14155541E151783A8C76422d0d5a676" as `0x${string}`,
 };
 
 export const alignUrls = {
