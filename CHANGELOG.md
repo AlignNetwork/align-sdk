@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/AlignNetwork/align-sdk/compare/v1.7.0...v1.8.0) (2024-06-03)
+
+
+### Features
+
+* updated constants, abi and marked alignTestnetv2 as depreciated ([#12](https://github.com/AlignNetwork/align-sdk/issues/12)) ([32cf261](https://github.com/AlignNetwork/align-sdk/commit/32cf26109b798126cb5d514e369b56704f675e1c))
+
 # [1.7.0](https://github.com/AlignNetwork/align-sdk/compare/v1.6.1...v1.7.0) (2024-06-01)
 
 
