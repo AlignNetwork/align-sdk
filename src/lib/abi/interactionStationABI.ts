@@ -165,6 +165,16 @@ export const interactionStationABI = [
   },
   {
     type: "function",
+    name: "updateOnlyCreator",
+    inputs: [
+      { name: "iTypeKey", type: "bytes32", internalType: "bytes32" },
+      { name: "_onlyCreator", type: "bool", internalType: "bool" },
+    ],
+    outputs: [],
+    stateMutability: "nonpayable",
+  },
+  {
+    type: "function",
     name: "verifyIPFS",
     inputs: [],
     outputs: [
