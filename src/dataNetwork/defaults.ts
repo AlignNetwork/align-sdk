@@ -74,8 +74,8 @@ export const AlignDefaults = {
     iKey: "0xb6d1f1aa465d29f35034cd29eaacc41f1841ea6d4f648d5b1f4541ac0cc731bd" as `0x${string}`,
     parentKeys:
       "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`,
-    cid: "bafyreiepkdmnbw66cqz4jqg4uukuhxopbgl4jspyx37rowtsf25b7oywh4",
-    version: "0.1.0",
+    cid: "bafyreifn3firvc5zqc7vb6z7ebomhlyrju4rsepo6sodxaykgcbpq5khby",
+    version: "0.1.1",
     name: "align profile",
     summary: "This is an Align Profile.",
     content: {
