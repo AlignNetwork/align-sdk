@@ -20,7 +20,7 @@ export async function upload(
   data: {
     [key: string]: any;
   },
-  local: boolean = false
+  local?: boolean
 ): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
   const dataToUpload = { ...data };
   let url = `${dataNetworkUrl}/upload`;
