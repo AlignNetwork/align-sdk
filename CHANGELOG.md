@@ -1,3 +1,11 @@
+## [1.8.4](https://github.com/AlignNetwork/align-sdk/compare/v1.8.3...v1.8.4) (2024-06-04)
+
+
+### Bug Fixes
+
+* added local mode to upload for testing ([8ed7f24](https://github.com/AlignNetwork/align-sdk/commit/8ed7f2468a195a6090562002c88cf95cd78d46dc))
+* added local mode to upload for testing ([f34a9ba](https://github.com/AlignNetwork/align-sdk/commit/f34a9ba77cca71996592b6f09c15343a8a00cfd8))
+
 ## [1.8.3](https://github.com/AlignNetwork/align-sdk/compare/v1.8.2...v1.8.3) (2024-06-04)
 
 
