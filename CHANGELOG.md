@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/AlignNetwork/align-sdk/compare/v1.8.2...v1.8.3) (2024-06-04)
+
+
+### Bug Fixes
+
+* remove req for sig on upload ([7bfed64](https://github.com/AlignNetwork/align-sdk/commit/7bfed64d554be1cae82fa50160f5904eef778735))
+
 ## [1.8.2](https://github.com/AlignNetwork/align-sdk/compare/v1.8.1...v1.8.2) (2024-06-04)
 
 
