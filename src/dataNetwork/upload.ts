@@ -16,11 +16,17 @@ type UploadResponse = {
   error: boolean;
 };
 
-export async function upload(data: {
-  [key: string]: any;
-}): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
+export async function upload(
+  data: {
+    [key: string]: any;
+  },
+  local: boolean = false
+): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
   const dataToUpload = { ...data };
-  const res = await fetch(`${dataNetworkUrl}/upload`, {
+  let url = `${dataNetworkUrl}/upload`;
+  if (local) url = `http://localhost:3001/upload`;
+
+  const res = await fetch(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
