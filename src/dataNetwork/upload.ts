@@ -24,7 +24,7 @@ export async function upload(
 ): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
   const dataToUpload = { ...data };
   let url = `${dataNetworkUrl}/upload`;
-  if (local) url = `http://localhost:3001/upload`;
+  if (local) url = `http://localhost:4003/upload`;
 
   const res = await fetch(url, {
     method: "POST",
