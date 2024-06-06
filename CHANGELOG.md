@@ -1,3 +1,10 @@
+## [1.8.5](https://github.com/AlignNetwork/align-sdk/compare/v1.8.4...v1.8.5) (2024-06-06)
+
+
+### Bug Fixes
+
+* updated localhost for upload ([a723128](https://github.com/AlignNetwork/align-sdk/commit/a723128234bbdc5906626694d2f4ac9a40f28375))
+
 ## [1.8.4](https://github.com/AlignNetwork/align-sdk/compare/v1.8.3...v1.8.4) (2024-06-04)
 
 
