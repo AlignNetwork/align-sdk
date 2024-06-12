@@ -1,3 +1,10 @@
+## [1.8.6](https://github.com/AlignNetwork/align-sdk/compare/v1.8.5...v1.8.6) (2024-06-12)
+
+
+### Bug Fixes
+
+* updated testnet contracts ([63bc3d8](https://github.com/AlignNetwork/align-sdk/commit/63bc3d8ad212a125d38518152508f35345e8b201))
+
 ## [1.8.5](https://github.com/AlignNetwork/align-sdk/compare/v1.8.4...v1.8.5) (2024-06-06)
 
 
