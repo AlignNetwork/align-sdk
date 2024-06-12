@@ -1,3 +1,10 @@
+## [1.8.8](https://github.com/AlignNetwork/align-sdk/compare/v1.8.7...v1.8.8) (2024-06-12)
+
+
+### Bug Fixes
+
+* add in alignEnv method for dev vs prod ([21b9fd4](https://github.com/AlignNetwork/align-sdk/commit/21b9fd487b756f88698c64690267dd7c489e4d57))
+
 ## [1.8.7](https://github.com/AlignNetwork/align-sdk/compare/v1.8.6...v1.8.7) (2024-06-12)
 
 
