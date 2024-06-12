@@ -9,6 +9,13 @@ export const alignIdRegistryABI = [
   },
   {
     type: "function",
+    name: "FEE_SETTER_ROLE",
+    inputs: [],
+    outputs: [{ name: "", type: "uint256", internalType: "uint256" }],
+    stateMutability: "view",
+  },
+  {
+    type: "function",
     name: "PAUSER_ROLE",
     inputs: [],
     outputs: [{ name: "", type: "uint256", internalType: "uint256" }],

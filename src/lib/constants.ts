@@ -45,9 +45,9 @@ export const alignTestnetV2Constants = {
 
 export const alignContracts = {
   alignIdRegistry:
-    "0xaE57e1B93DA10a7B5e746B2d17B0b3c7D90B2dDa" as `0x${string}`,
+    "0x8F97d988da02e141EBaBFA4639b9bC9E25aa5759" as `0x${string}`,
   interactionStation:
-    "0xEe8710c0B14155541E151783A8C76422d0d5a676" as `0x${string}`,
+    "0x8a6D0Bb45601ee923eE48be154Dea50F115cdD50" as `0x${string}`,
 };
 
 export const alignUrls = {
