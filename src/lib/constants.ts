@@ -63,8 +63,26 @@ export const alignUrls = {
   indexer: "https://apidev-v9.align.network",
 };
 
-export function alignEnvironment(env: "development" | "production") {
-  if (env === "development") {
+export function alignEnvironment(env: "development" | "production"): {
+  alignIdRegistry: `0x${string}`;
+  interactionStation: `0x${string}`;
+  ipfs: string;
+  indexer: string;
+  idABI: any;
+  isABI: any;
+  explorer: string;
+} {
+  if (env === "production") {
+    return {
+      alignIdRegistry: "" as `0x${string}`,
+      interactionStation: "" as `0x${string}`,
+      ipfs: "http://ipfs.align.network",
+      indexer: "https://apidev-v9.align.network",
+      idABI: alignIdRegistryABI,
+      isABI: interactionStationABI,
+      explorer: "https://arbiscan.io/",
+    };
+  } else {
     return {
       alignIdRegistry:
         "0x8F97d988da02e141EBaBFA4639b9bC9E25aa5759" as `0x${string}`,
@@ -75,17 +93,6 @@ export function alignEnvironment(env: "development" | "production") {
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
       explorer: "https://sepolia.arbiscan.io/",
-    };
-  }
-  if (env === "production") {
-    return {
-      alignIdRegistry: "" as `0x${string}`,
-      interactionStation: "" as `0x${string}`,
-      ipfs: "http://ipfs.align.network",
-      indexer: "https://apidev-v9.align.network",
-      idABI: alignIdRegistryABI,
-      isABI: interactionStationABI,
-      explorer: "https://arbiscan.io/",
     };
   }
 }
