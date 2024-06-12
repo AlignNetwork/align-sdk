@@ -1,3 +1,10 @@
+## [1.8.7](https://github.com/AlignNetwork/align-sdk/compare/v1.8.6...v1.8.7) (2024-06-12)
+
+
+### Bug Fixes
+
+* added file default ([8d4232e](https://github.com/AlignNetwork/align-sdk/commit/8d4232ef79eef60a30d8d62662272266d2fa2937))
+
 ## [1.8.6](https://github.com/AlignNetwork/align-sdk/compare/v1.8.5...v1.8.6) (2024-06-12)
 
 
