@@ -1,3 +1,10 @@
+## [1.8.15](https://github.com/AlignNetwork/align-sdk/compare/v1.8.14...v1.8.15) (2024-06-12)
+
+
+### Bug Fixes
+
+* updated get content to use correct url ([05aabb1](https://github.com/AlignNetwork/align-sdk/commit/05aabb1b381b65767417784f75cfe7acecd87674))
+
 ## [1.8.14](https://github.com/AlignNetwork/align-sdk/compare/v1.8.13...v1.8.14) (2024-06-12)
 
 
