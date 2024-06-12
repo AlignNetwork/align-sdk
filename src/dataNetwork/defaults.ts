@@ -84,4 +84,21 @@ export const AlignDefaults = {
       bio: "short 10000 character bio",
     },
   },
+  file: {
+    iTypeKey:
+      "0xa1b79868ca9899a72250bee77b0fae11fa916612624db2f9314a606857b486de" as `0x${string}`,
+    iKey: "" as `0x${string}`,
+    parentKeys:
+      "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`,
+    cid: "bafyreidwnrosplylb2tohmkphwr6puwgszegh6cbfnvc2l7fjy5sdr7aiu",
+    version: "0.1.0",
+    name: "file",
+    summary: "This is a file.",
+    content: {
+      version: "0.1.0",
+      name: "align file upload",
+      summary: "This is a generic file upload.",
+      content: "Uint8Array of file contents",
+    },
+  },
 };
