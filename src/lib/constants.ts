@@ -70,10 +70,11 @@ export function alignEnv(env: "development" | "production") {
         "0x8F97d988da02e141EBaBFA4639b9bC9E25aa5759" as `0x${string}`,
       interactionStation:
         "0x8a6D0Bb45601ee923eE48be154Dea50F115cdD50" as `0x${string}`,
-      ipfs: "http://ipfs-dev.align.network",
+      ipfs: "http://localhost:4003",
       indexer: "https://apidev-v9.align.network",
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
+      explorer: "https://sepolia.arbiscan.io/",
     };
   }
   if (env === "production") {
@@ -84,6 +85,7 @@ export function alignEnv(env: "development" | "production") {
       indexer: "https://apidev-v9.align.network",
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
+      explorer: "https://arbiscan.io/",
     };
   }
 }
