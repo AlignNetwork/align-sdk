@@ -1,3 +1,10 @@
+## [1.8.10](https://github.com/AlignNetwork/align-sdk/compare/v1.8.9...v1.8.10) (2024-06-12)
+
+
+### Bug Fixes
+
+* updated env ([25a74d7](https://github.com/AlignNetwork/align-sdk/commit/25a74d71fffd981ead195b1c73cd2e8b2cae0eb9))
+
 ## [1.8.9](https://github.com/AlignNetwork/align-sdk/compare/v1.8.8...v1.8.9) (2024-06-12)
 
 
