@@ -8,7 +8,7 @@ export { interactOnchain } from "./interactions/interact.js";
 export * from "./lib/abi/alignIdRegistryABI";
 export * from "./lib/abi/interactionStationABI";
 export * from "./lib/constants";
-export { alignTestnetV2 } from "./lib/constants.js";
+export { alignEnv, alignTestnetV2 } from "./lib/constants.js";
 export { interactDefaults } from "./main.js";
 export * from "./read";
 

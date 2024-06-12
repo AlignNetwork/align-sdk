@@ -1,4 +1,6 @@
 import { defineChain } from "viem";
+import { alignIdRegistryABI } from "./abi/alignIdRegistryABI";
+import { interactionStationABI } from "./abi/interactionStationABI";
 /**
  * @deprecated The method should not be used
  */
@@ -43,6 +45,9 @@ export const alignTestnetV2Constants = {
     "0xEe8710c0B14155541E151783A8C76422d0d5a676" as `0x${string}`,
 };
 
+/**
+ * @deprecated Depreciating align testnet v2 constants in favor of alignContracts
+ */
 export const alignContracts = {
   alignIdRegistry:
     "0x8F97d988da02e141EBaBFA4639b9bC9E25aa5759" as `0x${string}`,
@@ -50,7 +55,35 @@ export const alignContracts = {
     "0x8a6D0Bb45601ee923eE48be154Dea50F115cdD50" as `0x${string}`,
 };
 
+/**
+ * @deprecated Depreciating align testnet v2 constants in favor of alignContracts
+ */
 export const alignUrls = {
   ipfs: "http://ipfs.align.network",
   indexer: "https://apidev-v9.align.network",
 };
+
+export function alignEnv(env: "development" | "production") {
+  if (env === "development") {
+    return {
+      alignIdRegistry:
+        "0x8F97d988da02e141EBaBFA4639b9bC9E25aa5759" as `0x${string}`,
+      interactionStation:
+        "0x8a6D0Bb45601ee923eE48be154Dea50F115cdD50" as `0x${string}`,
+      ipfs: "http://ipfs-dev.align.network",
+      indexer: "https://apidev-v9.align.network",
+      idABI: alignIdRegistryABI,
+      isABI: interactionStationABI,
+    };
+  }
+  if (env === "production") {
+    return {
+      alignIdRegistry: "" as `0x${string}`,
+      interactionStation: "" as `0x${string}`,
+      ipfs: "http://ipfs.align.network",
+      indexer: "https://apidev-v9.align.network",
+      idABI: alignIdRegistryABI,
+      isABI: interactionStationABI,
+    };
+  }
+}
