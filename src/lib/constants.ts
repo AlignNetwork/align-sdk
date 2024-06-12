@@ -63,7 +63,7 @@ export const alignUrls = {
   indexer: "https://apidev-v9.align.network",
 };
 
-export function alignEnv(env: "development" | "production") {
+export function alignEnvironment(env: "development" | "production") {
   if (env === "development") {
     return {
       alignIdRegistry:
