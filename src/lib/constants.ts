@@ -71,6 +71,7 @@ export function alignEnvironment(env: "development" | "production"): {
   idABI: any;
   isABI: any;
   explorer: string;
+  blockStart: bigint;
 } {
   if (env === "production") {
     return {
@@ -80,7 +81,8 @@ export function alignEnvironment(env: "development" | "production"): {
       indexer: "https://apidev-v9.align.network",
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
-      explorer: "https://arbiscan.io/",
+      explorer: "https://arbiscan.io/address/",
+      blockStart: 0n,
     };
   } else {
     return {
@@ -92,7 +94,8 @@ export function alignEnvironment(env: "development" | "production"): {
       indexer: "https://apidev-v9.align.network",
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
-      explorer: "https://sepolia.arbiscan.io/",
+      explorer: "https://sepolia.arbiscan.io/address/",
+      blockStart: 53938368n,
     };
   }
 }
