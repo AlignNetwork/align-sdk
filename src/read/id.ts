@@ -1,9 +1,10 @@
-import { alignUrls } from "../lib";
+import { alignEnvironment } from "../lib";
 
-const apiUrl = alignUrls.indexer;
-
-export async function getId(address: `0x${string}`): Promise<any> {
-  const url = `${apiUrl}/id/${address}`;
+export async function getId(
+  address: `0x${string}`,
+  env: "development" | "production" = "development"
+): Promise<any> {
+  let url = `${alignEnvironment(env).indexer}/id/${address}`;
 
   try {
     const response = await fetch(url, {

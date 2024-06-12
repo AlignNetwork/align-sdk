@@ -1,4 +1,4 @@
-import { alignUrls } from "../lib";
+import { alignEnvironment } from "../lib";
 
 export class UploadError extends Error {
   constructor(message: string) {
@@ -6,8 +6,6 @@ export class UploadError extends Error {
     this.name = "UploadError";
   }
 }
-
-const dataNetworkUrl = alignUrls.ipfs;
 
 type UploadResponse = {
   result: string;
@@ -20,11 +18,10 @@ export async function upload(
   data: {
     [key: string]: any;
   },
-  local?: boolean
+  env: "development" | "production" = "development"
 ): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
   const dataToUpload = { ...data };
-  let url = `${dataNetworkUrl}/upload`;
-  if (local) url = `http://localhost:4003/upload`;
+  let url = alignEnvironment(env).ipfs + "/upload";
 
   const res = await fetch(url, {
     method: "POST",
