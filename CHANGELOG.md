@@ -1,3 +1,10 @@
+## [1.8.13](https://github.com/AlignNetwork/align-sdk/compare/v1.8.12...v1.8.13) (2024-06-12)
+
+
+### Bug Fixes
+
+* added alignenv to getid and upload ([9711dbf](https://github.com/AlignNetwork/align-sdk/commit/9711dbfad792e2722b0602e304abc64c6b2cf84e))
+
 ## [1.8.12](https://github.com/AlignNetwork/align-sdk/compare/v1.8.11...v1.8.12) (2024-06-12)
 
 
