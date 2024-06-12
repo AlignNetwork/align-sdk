@@ -1,3 +1,10 @@
+## [1.8.12](https://github.com/AlignNetwork/align-sdk/compare/v1.8.11...v1.8.12) (2024-06-12)
+
+
+### Bug Fixes
+
+* added blockstart ([141dd66](https://github.com/AlignNetwork/align-sdk/commit/141dd66da0898fb617317f135635f1350c074e8c))
+
 ## [1.8.11](https://github.com/AlignNetwork/align-sdk/compare/v1.8.10...v1.8.11) (2024-06-12)
 
 
