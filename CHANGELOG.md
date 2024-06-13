@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/AlignNetwork/align-sdk/compare/v1.8.18...v1.9.0) (2024-06-13)
+
+
+### Features
+
+* added mainnet contracts ([febde76](https://github.com/AlignNetwork/align-sdk/commit/febde7676c7a6604ce4b607246af15e31b2c3533))
+
 ## [1.8.18](https://github.com/AlignNetwork/align-sdk/compare/v1.8.17...v1.8.18) (2024-06-13)
 
 
