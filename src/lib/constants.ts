@@ -90,7 +90,7 @@ export function alignEnvironment(env: "development" | "production"): {
         "0x8F97d988da02e141EBaBFA4639b9bC9E25aa5759" as `0x${string}`,
       interactionStation:
         "0x8a6D0Bb45601ee923eE48be154Dea50F115cdD50" as `0x${string}`,
-      ipfs: "http://localhost:4003",
+      ipfs: "http://ipfs-dev.align.network",
       indexer: "https://apidev-v9.align.network",
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
