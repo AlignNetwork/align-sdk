@@ -1,3 +1,10 @@
+## [1.8.18](https://github.com/AlignNetwork/align-sdk/compare/v1.8.17...v1.8.18) (2024-06-13)
+
+
+### Bug Fixes
+
+* expoed arraybuffer ([c1ca72c](https://github.com/AlignNetwork/align-sdk/commit/c1ca72cbc835ce8720fd8771eabfa2f8cb71767b))
+
 ## [1.8.17](https://github.com/AlignNetwork/align-sdk/compare/v1.8.16...v1.8.17) (2024-06-13)
 
 
