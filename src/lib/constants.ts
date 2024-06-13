@@ -80,7 +80,7 @@ export function alignEnvironment(env: "development" | "production"): {
       interactionStation:
         "0xBd9f89E3784840E5F56c958ED99Eb5297D52391a" as `0x${string}`,
       ipfs: "http://ipfs.align.network",
-      indexer: "https://apidev-v9.align.network",
+      indexer: "https://indexer.align.network",
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
       explorer: "https://arbiscan.io/address/",
