@@ -1,3 +1,10 @@
+## [1.8.16](https://github.com/AlignNetwork/align-sdk/compare/v1.8.15...v1.8.16) (2024-06-13)
+
+
+### Bug Fixes
+
+* updated dev url and getcontent ([dbd17b6](https://github.com/AlignNetwork/align-sdk/commit/dbd17b63afc39c2d42d0d019ae4a031de4e989ca))
+
 ## [1.8.15](https://github.com/AlignNetwork/align-sdk/compare/v1.8.14...v1.8.15) (2024-06-12)
 
 
