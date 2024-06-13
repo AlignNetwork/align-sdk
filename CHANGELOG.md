@@ -1,3 +1,10 @@
+## [1.8.17](https://github.com/AlignNetwork/align-sdk/compare/v1.8.16...v1.8.17) (2024-06-13)
+
+
+### Bug Fixes
+
+* added array buffer getter ([8f975b2](https://github.com/AlignNetwork/align-sdk/commit/8f975b2fc455095baa9838165857ec7256ab9507))
+
 ## [1.8.16](https://github.com/AlignNetwork/align-sdk/compare/v1.8.15...v1.8.16) (2024-06-13)
 
 
