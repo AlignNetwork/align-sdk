@@ -75,14 +75,16 @@ export function alignEnvironment(env: "development" | "production"): {
 } {
   if (env === "production") {
     return {
-      alignIdRegistry: "" as `0x${string}`,
-      interactionStation: "" as `0x${string}`,
+      alignIdRegistry:
+        "0x35Ca546EC4Bc72aBBc59731af15bA6D802fa625C" as `0x${string}`,
+      interactionStation:
+        "0xBd9f89E3784840E5F56c958ED99Eb5297D52391a" as `0x${string}`,
       ipfs: "http://ipfs.align.network",
       indexer: "https://apidev-v9.align.network",
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
       explorer: "https://arbiscan.io/address/",
-      blockStart: 0n,
+      blockStart: 221544799n,
     };
   } else {
     return {
