@@ -1,3 +1,10 @@
+## [1.9.4](https://github.com/AlignNetwork/align-sdk/compare/v1.9.3...v1.9.4) (2024-06-14)
+
+
+### Bug Fixes
+
+* added text to response of get storage ([b176b7f](https://github.com/AlignNetwork/align-sdk/commit/b176b7f057066420698c6414bdb6005c30947184))
+
 ## [1.9.3](https://github.com/AlignNetwork/align-sdk/compare/v1.9.2...v1.9.3) (2024-06-14)
 
 
