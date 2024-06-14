@@ -1,3 +1,10 @@
+## [1.9.5](https://github.com/AlignNetwork/align-sdk/compare/v1.9.4...v1.9.5) (2024-06-14)
+
+
+### Bug Fixes
+
+* added file upload ([5dcc976](https://github.com/AlignNetwork/align-sdk/commit/5dcc9769b1fc681da712d0332795823381e1dc27))
+
 ## [1.9.4](https://github.com/AlignNetwork/align-sdk/compare/v1.9.3...v1.9.4) (2024-06-14)
 
 
