@@ -47,3 +47,15 @@ function arrayBufferToBase64(buffer: ArrayBuffer) {
   }
   return btoa(binary);
 }
+
+export async function getStorage(
+  env: "development" | "production" = "development"
+): Promise<any> {
+  let url = `${alignEnvironment(env).ipfs}/storage`;
+  const res = await fetch(`${url}`, {
+    method: "GET",
+  });
+  const result = res;
+  console.log("res:", result);
+  return res;
+}
