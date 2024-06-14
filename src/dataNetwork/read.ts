@@ -55,7 +55,6 @@ export async function getStorage(
   const res = await fetch(`${url}`, {
     method: "GET",
   });
-  const result = res;
-  console.log("res:", result);
-  return res;
+  const result = res.text();
+  return result;
 }
