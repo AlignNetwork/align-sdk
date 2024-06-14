@@ -1,3 +1,10 @@
+## [1.9.3](https://github.com/AlignNetwork/align-sdk/compare/v1.9.2...v1.9.3) (2024-06-14)
+
+
+### Bug Fixes
+
+* added getstorage to export ([544106b](https://github.com/AlignNetwork/align-sdk/commit/544106bb340b531c317c4c256b3225345acc3439))
+
 ## [1.9.2](https://github.com/AlignNetwork/align-sdk/compare/v1.9.1...v1.9.2) (2024-06-14)
 
 
