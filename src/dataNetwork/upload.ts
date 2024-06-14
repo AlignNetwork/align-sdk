@@ -42,3 +42,30 @@ export async function upload(
     cid: result.cid,
   };
 }
+
+export async function uploadFile(
+  fileName: string,
+  fileBuffer: Uint8Array,
+  env: "development" | "production" = "development"
+): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
+  let url = alignEnvironment(env).ipfs + "/upload";
+  const res = await fetch(`${url}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/octet-stream",
+      "File-Name": fileName,
+    },
+    body: fileBuffer,
+  });
+  let result = (await res.json()) as UploadResponse;
+  if (result.error) {
+    console.log(result);
+    throw new UploadError(result.result);
+  }
+  return {
+    error: result.error,
+    result: result.result,
+    data: result.data,
+    cid: result.cid,
+  };
+}
