@@ -1,3 +1,10 @@
+## [1.9.2](https://github.com/AlignNetwork/align-sdk/compare/v1.9.1...v1.9.2) (2024-06-14)
+
+
+### Bug Fixes
+
+* added get storage method ([091d948](https://github.com/AlignNetwork/align-sdk/commit/091d948a05b20d3f0676c550b5289923d8ee25a2))
+
 ## [1.9.1](https://github.com/AlignNetwork/align-sdk/compare/v1.9.0...v1.9.1) (2024-06-13)
 
 
