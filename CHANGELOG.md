@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/AlignNetwork/align-sdk/compare/v1.9.5...v1.10.0) (2024-06-18)
+
+
+### Features
+
+* replaced arb testnet with op testnet ([7a00d3c](https://github.com/AlignNetwork/align-sdk/commit/7a00d3c89dbf6f6058f9574f41fd29ba5839e6a9))
+
 ## [1.9.5](https://github.com/AlignNetwork/align-sdk/compare/v1.9.4...v1.9.5) (2024-06-14)
 
 
