@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/AlignNetwork/align-sdk/compare/v1.10.0...v1.10.1) (2024-06-18)
+
+
+### Bug Fixes
+
+* added production contracts ([ac17eed](https://github.com/AlignNetwork/align-sdk/commit/ac17eeda13494813190321d4f6bf029710e11662))
+
 # [1.10.0](https://github.com/AlignNetwork/align-sdk/compare/v1.9.5...v1.10.0) (2024-06-18)
 
 
