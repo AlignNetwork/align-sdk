@@ -1,3 +1,11 @@
+## [1.10.3](https://github.com/AlignNetwork/align-sdk/compare/v1.10.2...v1.10.3) (2024-06-18)
+
+
+### Bug Fixes
+
+* added file, nft and meme defaults ([858aeee](https://github.com/AlignNetwork/align-sdk/commit/858aeeebacb47ce8f0baeb965aad86b1af9a336e))
+* updated tests to compile w typescript ([501a905](https://github.com/AlignNetwork/align-sdk/commit/501a905868090b59efc4fc4b024c7fd01b4a0ca1))
+
 ## [1.10.2](https://github.com/AlignNetwork/align-sdk/compare/v1.10.1...v1.10.2) (2024-06-18)
 
 
