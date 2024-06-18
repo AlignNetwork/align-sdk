@@ -14,7 +14,7 @@ describe("test ipfs", () => {
       dateOf: "1715959249",
     };
 
-    const defaultFormat = AlignDefaults["post"];
+    const defaultFormat = AlignDefaults["file"];
     // validte the incoming data is in the correct format
     let res = await validate(data, defaultFormat);
     expect(res).to.be.true;
@@ -27,7 +27,7 @@ describe("test ipfs", () => {
       image: "imageurl",
     };
 
-    const defaultFormat = AlignDefaults["post"];
+    const defaultFormat = AlignDefaults["file"];
     // validte the incoming data is in the correct format
     expect(() => validate(data, defaultFormat)).to.throw(
       ValidationError,
@@ -44,7 +44,7 @@ describe("test ipfs", () => {
       extraKey: "extraValue",
     };
 
-    const defaultFormat = AlignDefaults["post"];
+    const defaultFormat = AlignDefaults["file"];
     // validte the incoming data is in the correct format
     expect(() => validate(data, defaultFormat)).to.throw(
       ValidationError,
@@ -69,7 +69,7 @@ describe("test uploading interaction to ipfs", () => {
       dateOf: Date.now().toLocaleString(),
     };
 
-    const defaultFormat = AlignDefaults["post"];
+    const defaultFormat = AlignDefaults["file"];
     // validte the incoming data is in the correct format
     await validate(data, defaultFormat);
     const uploadResult = await upload(data);

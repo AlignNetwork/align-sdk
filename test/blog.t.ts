@@ -13,13 +13,13 @@ describe("test create blog", () => {
     };
 
     // parent - from, post image, dateOf
-    const parentKey = AlignDefaults["blog"].iTypeKey;
+    const parentKey = AlignDefaults["file"].iTypeKey;
 
     // add in my content and change name
     const dataWithMyAdditions = {
-      content: { ...AlignDefaults["blog"].content, ...myContent },
-      summary: AlignDefaults["blog"].summary,
-      version: AlignDefaults["blog"].version,
+      content: { ...AlignDefaults["file"].content, ...myContent },
+      summary: AlignDefaults["file"].summary,
+      version: AlignDefaults["file"].version,
       name: `#${alignId} blog`,
     };
 
