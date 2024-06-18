@@ -84,7 +84,7 @@ export function alignEnvironment(env: "development" | "production"): {
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
       explorer: "https://optimistic.etherscan.io/address/",
-      blockStart: 221544799n,
+      blockStart: 121569404n,
     };
   } else {
     return {
