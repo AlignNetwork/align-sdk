@@ -89,15 +89,15 @@ export function alignEnvironment(env: "development" | "production"): {
   } else {
     return {
       alignIdRegistry:
-        "0x8F97d988da02e141EBaBFA4639b9bC9E25aa5759" as `0x${string}`,
+        "0x9CF4844B40e534c63A03C7F87E66A78F36fc92cA" as `0x${string}`,
       interactionStation:
-        "0x8a6D0Bb45601ee923eE48be154Dea50F115cdD50" as `0x${string}`,
+        "0x03158C08249e9DEEf562012BCA9001d9D686C692" as `0x${string}`,
       ipfs: "http://ipfs-dev.align.network",
       indexer: "https://apidev-v9.align.network",
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
-      explorer: "https://sepolia.arbiscan.io/address/",
-      blockStart: 53938368n,
+      explorer: "https://sepolia-optimistic.etherscan.io/address/",
+      blockStart: 13460726n,
     };
   }
 }
