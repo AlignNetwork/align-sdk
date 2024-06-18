@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/AlignNetwork/align-sdk/compare/v1.10.1...v1.10.2) (2024-06-18)
+
+
+### Bug Fixes
+
+* added blockstart for mainnet op ([56a98d9](https://github.com/AlignNetwork/align-sdk/commit/56a98d904f79459bd1e1aa549d224e7c6c86ccae))
+
 ## [1.10.1](https://github.com/AlignNetwork/align-sdk/compare/v1.10.0...v1.10.1) (2024-06-18)
 
 
