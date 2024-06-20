@@ -1,3 +1,11 @@
+## [1.10.4](https://github.com/AlignNetwork/align-sdk/compare/v1.10.3...v1.10.4) (2024-06-20)
+
+
+### Bug Fixes
+
+* typescript errors ([62bad45](https://github.com/AlignNetwork/align-sdk/commit/62bad453a69f324281a0130a2f4a5b017454912f))
+* updated reads to use new alignEnv ([e60633d](https://github.com/AlignNetwork/align-sdk/commit/e60633d9cac923d0aba022b9574318293bfdd958))
+
 ## [1.10.3](https://github.com/AlignNetwork/align-sdk/compare/v1.10.2...v1.10.3) (2024-06-18)
 
 
