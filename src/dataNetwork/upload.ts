@@ -14,11 +14,11 @@ type UploadResponse = {
   error: boolean;
 };
 
-export async function upload(
+export async function uploadJson(
   data: {
     [key: string]: any;
   },
-  env: "development" | "production" = "development"
+  env: "development" | "production" = "production"
 ): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
   const dataToUpload = { ...data };
   let url = alignEnvironment(env).ipfs + "/upload";
@@ -46,8 +46,20 @@ export async function upload(
 export async function uploadFile(
   fileName: string,
   fileBuffer: Uint8Array,
-  env: "development" | "production" = "development"
+  file: File,
+  env: "development" | "production" = "production"
 ): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
+  const fileSizeInBytes = file.size;
+  const fileSizeInKilobytes = fileSizeInBytes / 1024;
+  const fileSizeInMegabytes = fileSizeInKilobytes / 1024;
+  if (fileSizeInMegabytes > 10) {
+    return {
+      error: true,
+      result: "File size is too large",
+      cid: "",
+      data: "",
+    };
+  }
   let url = alignEnvironment(env).ipfs + "/upload";
   const res = await fetch(`${url}`, {
     method: "POST",
@@ -58,10 +70,6 @@ export async function uploadFile(
     body: fileBuffer,
   });
   let result = (await res.json()) as UploadResponse;
-  if (result.error) {
-    console.log(result);
-    throw new UploadError(result.result);
-  }
   return {
     error: result.error,
     result: result.result,

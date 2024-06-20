@@ -2,7 +2,7 @@ import { alignEnvironment } from "../lib";
 
 export async function getId(
   address: `0x${string}`,
-  env: "development" | "production" = "development"
+  env: "development" | "production" = "production"
 ): Promise<any> {
   let url = `${alignEnvironment(env).indexer}/id/${address}`;
 

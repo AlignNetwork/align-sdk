@@ -1,6 +1,6 @@
 import type { Account, TransactionReceipt } from "viem";
 import { AlignDefaults } from "./dataNetwork/defaults";
-import { UploadError, upload } from "./dataNetwork/upload";
+import { UploadError, uploadJson } from "./dataNetwork/upload";
 import { ValidationError } from "./dataNetwork/validate";
 import { InteractError, interactOnchain } from "./interactions/interact";
 
@@ -25,7 +25,7 @@ export async function interactDefaults(
     // search AlignDefaults for the defaultType
     const defaultFormat = AlignDefaults[defaultType];
     // upload the data to IPFS, throws error if it fails
-    const uploadResult = await upload(data);
+    const uploadResult = await uploadJson(data);
     // get the interaction type key from the registry, unless provided
     //const interactionTypeKey = await getInteractionTypeKey();
     let res = await interactOnchain(

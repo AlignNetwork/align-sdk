@@ -63,7 +63,9 @@ export const alignUrls = {
   indexer: "https://apidev-v9.align.network",
 };
 
-export function alignEnvironment(env: "development" | "production"): {
+export function alignEnvironment(
+  env: "development" | "production" = "production"
+): {
   alignIdRegistry: `0x${string}`;
   interactionStation: `0x${string}`;
   ipfs: string;

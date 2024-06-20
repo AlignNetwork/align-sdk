@@ -1,9 +1,10 @@
-import { alignUrls } from "../lib";
+import { alignEnvironment } from "../lib";
 
-const apiUrl = alignUrls.indexer;
-
-export async function users(pageParam: number | null): Promise<any> {
-  const url = `${apiUrl}/users/${pageParam}`;
+export async function users(
+  pageParam: number | null,
+  env: "development" | "production" = "production"
+): Promise<any> {
+  const url = `${alignEnvironment(env).indexer}/users/${pageParam}`;
 
   try {
     const response = await fetch(url, {

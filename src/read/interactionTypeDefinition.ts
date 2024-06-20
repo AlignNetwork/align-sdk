@@ -1,11 +1,12 @@
-import { alignUrls } from "../lib";
+import { alignEnvironment, alignUrls } from "../lib";
 
 const apiUrl = alignUrls.indexer;
 
 export async function interactionTypeKeyDefinition(
-  typeKey: string
+  typeKey: string,
+  env: "development" | "production" = "production"
 ): Promise<any> {
-  const url = `${apiUrl}/itype/${typeKey}`;
+  const url = `${alignEnvironment(env).indexer}/itype/${typeKey}`;
 
   try {
     const response = await fetch(url, {

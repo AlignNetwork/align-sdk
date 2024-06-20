@@ -1,7 +1,7 @@
 import { alignEnvironment } from "../lib";
 
 export async function getPins(
-  env: "development" | "production" = "development"
+  env: "development" | "production" = "production"
 ): Promise<any> {
   let url = `${alignEnvironment(env).ipfs}/getpins`;
   const res = await fetch(`${url}`, {
@@ -13,7 +13,7 @@ export async function getPins(
 
 export async function getContent(
   cid: string,
-  env: "development" | "production" = "development"
+  env: "development" | "production" = "production"
 ): Promise<any> {
   let url = `${alignEnvironment(env).ipfs}/ipfs/${cid}`;
   const res = await fetch(`${url}`, {
@@ -25,7 +25,7 @@ export async function getContent(
 
 export async function getArrayBuffer(
   cid: string,
-  env: "development" | "production" = "development"
+  env: "development" | "production" = "production"
 ): Promise<any> {
   let url = `${alignEnvironment(env).ipfs}/arraybuffer/${cid}`;
   const res = await fetch(`${url}`, {
@@ -49,7 +49,7 @@ function arrayBufferToBase64(buffer: ArrayBuffer) {
 }
 
 export async function getStorage(
-  env: "development" | "production" = "development"
+  env: "development" | "production" = "production"
 ): Promise<any> {
   let url = `${alignEnvironment(env).ipfs}/storage`;
   const res = await fetch(`${url}`, {

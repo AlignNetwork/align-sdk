@@ -1,12 +1,13 @@
-import { alignUrls } from "../lib";
-
-const apiUrl = alignUrls.indexer;
+import { alignEnvironment } from "../lib";
 
 export async function interactionsByTypeKeyPage(
   typeKey: string,
-  pageParam: number
+  pageParam: number,
+  env: "development" | "production" = "production"
 ): Promise<any> {
-  const url = `${apiUrl}/itypekeypage/${typeKey}/${pageParam}`;
+  const url = `${
+    alignEnvironment(env).indexer
+  }/itypekeypage/${typeKey}/${pageParam}`;
 
   try {
     const response = await fetch(url, {
@@ -30,6 +31,6 @@ export async function interactionsByTypeKeyPage(
     };
   } catch (error) {
     console.error("Fetching align id failed:", error);
-    throw error; // Re-throw the error if you want calling code to handle it
+    throw error;
   }
 }
