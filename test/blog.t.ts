@@ -1,7 +1,7 @@
 // test validating the data
 import { privateKeyToAccount } from "viem/accounts";
 import { AlignDefaults } from "../src";
-import { upload } from "../src/dataNetwork/upload";
+import { uploadJson } from "../src/dataNetwork/upload";
 import { createInteractionType } from "../src/interactions/createInteractionType";
 import { interactOnchain } from "../src/interactions/interact";
 
@@ -28,7 +28,7 @@ describe("test create blog", () => {
     let uploadResult;
     try {
       // upload resulting data to ipfs
-      uploadResult = await upload(dataWithMyAdditions);
+      uploadResult = await uploadJson(dataWithMyAdditions);
     } catch (error) {
       uploadResult = {
         cid: "bafyreibnu6ii47ny2zbg37tajvusiykildvcpb4i67bqib444xbk74m4gu",
@@ -50,7 +50,7 @@ describe("test create blog", () => {
       dateOf: new Date().toLocaleString(),
       emoji: "👋",
     };
-    let uploadedInteraction = await upload(dataWithMyInteractions);
+    let uploadedInteraction = await uploadJson(dataWithMyInteractions);
     // interact with the interaction type
     await interactOnchain(
       "0x74e682afd9b9bc41eb4a239338823a58970f779d72d3a1c02a829c45727b5fb0" as `0x${string}`,

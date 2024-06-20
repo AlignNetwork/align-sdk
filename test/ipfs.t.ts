@@ -2,7 +2,7 @@
 import { expect } from "chai";
 import { getContent, validate } from "../src";
 import { AlignDefaults } from "../src/dataNetwork/defaults";
-import { upload } from "../src/dataNetwork/upload";
+import { uploadJson } from "../src/dataNetwork/upload";
 import { ValidationError } from "../src/dataNetwork/validate";
 
 describe("test ipfs", () => {
@@ -72,7 +72,7 @@ describe("test uploading interaction to ipfs", () => {
     const defaultFormat = AlignDefaults["file"];
     // validte the incoming data is in the correct format
     await validate(data, defaultFormat);
-    const uploadResult = await upload(data);
+    const uploadResult = await uploadJson(data);
     console.log(uploadResult);
     expect(uploadResult.error).to.be.false;
     expect(uploadResult.cid).to.be.a("string");
