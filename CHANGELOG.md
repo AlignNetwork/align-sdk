@@ -1,3 +1,10 @@
+## [1.10.5](https://github.com/AlignNetwork/align-sdk/compare/v1.10.4...v1.10.5) (2024-06-21)
+
+
+### Bug Fixes
+
+* updated align env and added myinteractionsbytype ([5e4fa62](https://github.com/AlignNetwork/align-sdk/commit/5e4fa62341a030baf911a3df72bd157453112577))
+
 ## [1.10.4](https://github.com/AlignNetwork/align-sdk/compare/v1.10.3...v1.10.4) (2024-06-20)
 
 
