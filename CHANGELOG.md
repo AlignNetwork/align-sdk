@@ -1,3 +1,10 @@
+## [1.10.7](https://github.com/AlignNetwork/align-sdk/compare/v1.10.6...v1.10.7) (2024-06-21)
+
+
+### Bug Fixes
+
+* added page to myinteractionbyto ([6f26d1e](https://github.com/AlignNetwork/align-sdk/commit/6f26d1e4f74ff0f0f6c6fc2edd454e615ceb3d27))
+
 ## [1.10.6](https://github.com/AlignNetwork/align-sdk/compare/v1.10.5...v1.10.6) (2024-06-21)
 
 
