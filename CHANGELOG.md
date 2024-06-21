@@ -1,3 +1,10 @@
+## [1.10.9](https://github.com/AlignNetwork/align-sdk/compare/v1.10.8...v1.10.9) (2024-06-21)
+
+
+### Bug Fixes
+
+* exported getalignEvnrionment ([1fde70f](https://github.com/AlignNetwork/align-sdk/commit/1fde70f2efdeee505f1402e3c68e466399eae2ca))
+
 ## [1.10.8](https://github.com/AlignNetwork/align-sdk/compare/v1.10.7...v1.10.8) (2024-06-21)
 
 
