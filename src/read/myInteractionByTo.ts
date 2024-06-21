@@ -2,10 +2,11 @@ import { getAlignEnvironment } from "../lib/alignEnvironment";
 
 export async function myInteractionByTo(
   alignId: string,
+  pageParam: number,
   env: "development" | "production" = "production"
 ): Promise<any> {
   const { indexer } = getAlignEnvironment(env);
-  const url = `${indexer}/myinteractionbyto/${alignId}`;
+  const url = `${indexer}/myinteractionbyto/${alignId}/${pageParam}`;
 
   try {
     const response = await fetch(url, {
