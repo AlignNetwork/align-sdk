@@ -1,3 +1,10 @@
+## [1.10.8](https://github.com/AlignNetwork/align-sdk/compare/v1.10.7...v1.10.8) (2024-06-21)
+
+
+### Bug Fixes
+
+* added next page to routes ([59b08cf](https://github.com/AlignNetwork/align-sdk/commit/59b08cfe701aa554aca2b9123c742896e2c19650))
+
 ## [1.10.7](https://github.com/AlignNetwork/align-sdk/compare/v1.10.6...v1.10.7) (2024-06-21)
 
 
