@@ -1,11 +1,12 @@
-import { alignEnvironment } from "../lib";
+import { getAlignEnvironment } from "../lib/alignEnvironment";
 
 export async function interactionsByKeyPage(
   key: string,
   pageParam: number,
   env: "development" | "production" = "production"
 ): Promise<any> {
-  const url = `${alignEnvironment(env).indexer}/ikeypage/${key}/${pageParam}`;
+  const { indexer } = getAlignEnvironment(env);
+  const url = `${indexer}/ikeypage/${key}/${pageParam}`;
 
   try {
     const response = await fetch(url, {

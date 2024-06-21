@@ -16,5 +16,6 @@ export * from "./lib/constants";
 export { alignEnvironment, alignTestnetV2 } from "./lib/constants.js";
 export { interactDefaults } from "./main.js";
 export * from "./read";
+export { myInteractionsByType } from "./read/myinteractionsbytype.js";
 
 export * from "./dataNetwork/upload.js";

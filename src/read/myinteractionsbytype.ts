@@ -1,11 +1,13 @@
 import { getAlignEnvironment } from "../lib/alignEnvironment";
 
-export async function users(
-  pageParam: number | null,
+export async function myInteractionsByType(
+  alignId: string,
+  iTypeKey: string,
+  pageParam: number,
   env: "development" | "production" = "production"
 ): Promise<any> {
   const { indexer } = getAlignEnvironment(env);
-  const url = `${indexer}/users/${pageParam}`;
+  const url = `${indexer}/myinteractionsbytype/${alignId}/${iTypeKey}/${pageParam}`;
 
   try {
     const response = await fetch(url, {
@@ -23,9 +25,7 @@ export async function users(
     const data = await response.json();
     return {
       //@ts-ignore
-      data: data.data,
-      //@ts-ignore
-      nextPage: data.nextPage,
+      data: data,
     };
   } catch (error) {
     console.error("Fetching align id failed:", error);

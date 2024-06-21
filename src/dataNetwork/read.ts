@@ -1,9 +1,10 @@
-import { alignEnvironment } from "../lib";
+import { getAlignEnvironment } from "../lib/alignEnvironment";
 
 export async function getPins(
   env: "development" | "production" = "production"
 ): Promise<any> {
-  let url = `${alignEnvironment(env).ipfs}/getpins`;
+  const { ipfs } = getAlignEnvironment(env);
+  let url = `${ipfs}/getpins`;
   const res = await fetch(`${url}`, {
     method: "POST",
   });
@@ -15,7 +16,8 @@ export async function getContent(
   cid: string,
   env: "development" | "production" = "production"
 ): Promise<any> {
-  let url = `${alignEnvironment(env).ipfs}/ipfs/${cid}`;
+  const { ipfs } = getAlignEnvironment(env);
+  let url = `${ipfs}/ipfs/${cid}`;
   const res = await fetch(`${url}`, {
     method: "GET",
   });
@@ -27,7 +29,8 @@ export async function getArrayBuffer(
   cid: string,
   env: "development" | "production" = "production"
 ): Promise<any> {
-  let url = `${alignEnvironment(env).ipfs}/arraybuffer/${cid}`;
+  const { ipfs } = getAlignEnvironment(env);
+  let url = `${ipfs}/arraybuffer/${cid}`;
   const res = await fetch(`${url}`, {
     method: "GET",
   });
@@ -51,7 +54,8 @@ function arrayBufferToBase64(buffer: ArrayBuffer) {
 export async function getStorage(
   env: "development" | "production" = "production"
 ): Promise<any> {
-  let url = `${alignEnvironment(env).ipfs}/storage`;
+  const { ipfs } = getAlignEnvironment(env);
+  let url = `${ipfs}/storage`;
   const res = await fetch(`${url}`, {
     method: "GET",
   });

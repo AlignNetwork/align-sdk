@@ -4,7 +4,7 @@
 
 </div>
 
-<h2 align="center">Align Interaction Station SDK</h2>
+<h2 align="center">Align SDK</h2>
 <br />
 <p align="center">
 
@@ -16,30 +16,31 @@
 > UNSTABLE. This repo changes rapidly and the contracts are updated frequently.
 > An SDK for interacting with the Align Network
 
-### Use
+## Usage
 
-see [test](/test) for example
+To use the SDK, ensure that your root component is wrapped with the `AlignProvider`.
 
-```typescript
-    const data = {
-      from: "1", // Align Id you issuing to
-      post: "This is the first post, for testing!", // text of post
-      image: "imageurl",
-      dateOf: new Date().toLocaleString(),
-    };
+### Example
 
-    // validte the incoming data is in the correct format
-    const PRIVATE_KEY = process.env.PRIVATE_KEY as `0x${string}`;
-    const account = privateKeyToAccount(PRIVATE_KEY as `0x${string}`);
-    // interact defaults
-    let res = await interactDefaults(data, 1n, "post", account);
-    console.log(res.receipt);
-    expect(res.success).to.be.true;
-  });
+```tsx
+// src/index.tsx or src/App.tsx
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+const App = () => (
+  <AlignProvider>
+    <MyComponent />
+  </AlignProvider>
+);
 ```
 
 Align Default Interaction Types:
 
-1. `post`
-2. `blog`
-3. `points`
+1. `file`
+2. `nft`
+3. `meme`
+
+```
+
+```

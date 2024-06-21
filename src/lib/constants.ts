@@ -63,6 +63,9 @@ export const alignUrls = {
   indexer: "https://apidev-v9.align.network",
 };
 
+/**
+ * @deprecated Depreciating for refactoring
+ */
 export function alignEnvironment(
   env: "development" | "production" = "production"
 ): {

@@ -1,10 +1,11 @@
-import { alignEnvironment } from "../lib";
+import { getAlignEnvironment } from "../lib/alignEnvironment";
 
 export async function getId(
   address: `0x${string}`,
   env: "development" | "production" = "production"
 ): Promise<any> {
-  let url = `${alignEnvironment(env).indexer}/id/${address}`;
+  const { indexer } = getAlignEnvironment(env);
+  let url = `${indexer}/id/${address}`;
 
   try {
     const response = await fetch(url, {

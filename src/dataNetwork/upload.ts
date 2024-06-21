@@ -1,4 +1,4 @@
-import { alignEnvironment } from "../lib";
+import { getAlignEnvironment } from "../lib/alignEnvironment";
 
 export class UploadError extends Error {
   constructor(message: string) {
@@ -21,7 +21,8 @@ export async function uploadJson(
   env: "development" | "production" = "production"
 ): Promise<{ error: boolean; cid: string; result?: string; data?: any }> {
   const dataToUpload = { ...data };
-  let url = alignEnvironment(env).ipfs + "/upload";
+  const { ipfs } = getAlignEnvironment(env);
+  let url = ipfs + "/upload";
 
   const res = await fetch(url, {
     method: "POST",
@@ -60,7 +61,8 @@ export async function uploadFile(
       data: "",
     };
   }
-  let url = alignEnvironment(env).ipfs + "/upload";
+  const { ipfs } = getAlignEnvironment(env);
+  let url = ipfs + "/upload";
   const res = await fetch(`${url}`, {
     method: "POST",
     headers: {

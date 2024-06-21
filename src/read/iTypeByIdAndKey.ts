@@ -1,13 +1,12 @@
-import { alignEnvironment } from "../lib";
+import { getAlignEnvironment } from "../lib/alignEnvironment";
 
 export async function iTypeByAlignIdAndKey(
   alignId: string,
   iTypeKey: string,
   env: "development" | "production" = "production"
 ): Promise<any> {
-  const url = `${
-    alignEnvironment(env).indexer
-  }/itypebyidandkey/${alignId}/${iTypeKey}`;
+  const { indexer } = getAlignEnvironment(env);
+  const url = `${indexer}/itypebyidandkey/${alignId}/${iTypeKey}`;
 
   try {
     const response = await fetch(url, {
