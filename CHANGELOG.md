@@ -1,3 +1,10 @@
+## [1.10.11](https://github.com/AlignNetwork/align-sdk/compare/v1.10.10...v1.10.11) (2024-06-23)
+
+
+### Bug Fixes
+
+* removed address from explorer link ([0c3e1f0](https://github.com/AlignNetwork/align-sdk/commit/0c3e1f0a3eeff0e72dff9c357dee9770440a3903))
+
 ## [1.10.10](https://github.com/AlignNetwork/align-sdk/compare/v1.10.9...v1.10.10) (2024-06-23)
 
 
