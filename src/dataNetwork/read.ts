@@ -34,11 +34,15 @@ export async function getArrayBuffer(
   const res = await fetch(`${url}`, {
     method: "GET",
   });
-  const result = await res.arrayBuffer();
+  const result = (await res.json()) as {
+    buffer: ArrayBuffer;
+    filetype: string;
+  };
   console.log("cid:", result);
-  const arrayBuffer = new Uint8Array(result).buffer;
+  const arrayBuffer = new Uint8Array(result.buffer);
+  const fileType = result.filetype;
   const base64String = arrayBufferToBase64(arrayBuffer);
-  return base64String;
+  return { base64String, fileType };
 }
 
 function arrayBufferToBase64(buffer: ArrayBuffer) {
