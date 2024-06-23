@@ -50,4 +50,21 @@ export const AlignDefaults = {
       content: "Uint8Array of nft contents",
     },
   },
+  dispute: {
+    iTypeKey:
+      "0x5ccef2e75faf813914ca81514683bb551f97b0dabb1a7b88078d8d047c8d71d1" as `0x${string}`,
+    iKey: "" as `0x${string}`,
+    parentKeys:
+      "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`,
+    cid: "bafyreiezsbnvcjagvzwkys27xmmtmaa4bes2ioofrs2wh6hi7gmzgtufqi",
+    version: "0.1.0",
+    name: "dispute",
+    summary: "This is a dispute.",
+    content: {
+      name: "align dispute upload",
+      content: "Uint8Array of dispute contents",
+      summary: "This is a generic dispute on an interaction.",
+      version: "0.1.0",
+    },
+  },
 };
