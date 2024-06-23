@@ -39,7 +39,7 @@ export async function getArrayBuffer(
     filetype: string;
   };
   console.log("cid:", result);
-  const arrayBuffer = new Uint8Array(result.buffer);
+  const arrayBuffer = new Uint8Array(result.buffer).buffer;
   const fileType = result.filetype;
   const base64String = arrayBufferToBase64(arrayBuffer);
   return { base64String, fileType };
