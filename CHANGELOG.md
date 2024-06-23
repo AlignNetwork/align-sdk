@@ -1,3 +1,10 @@
+## [1.10.10](https://github.com/AlignNetwork/align-sdk/compare/v1.10.9...v1.10.10) (2024-06-23)
+
+
+### Bug Fixes
+
+* added dispute as a default ([dab0543](https://github.com/AlignNetwork/align-sdk/commit/dab0543f4a0592be4da77006c0ac80ed8a1ea6aa))
+
 ## [1.10.9](https://github.com/AlignNetwork/align-sdk/compare/v1.10.8...v1.10.9) (2024-06-21)
 
 
