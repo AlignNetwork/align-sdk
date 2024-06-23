@@ -14,7 +14,7 @@ export function getAlignEnvironment(
       indexer: "https://indexer.align.network",
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
-      explorer: "https://optimistic.etherscan.io/address/",
+      explorer: "https://optimistic.etherscan.io/",
       blockStart: 121569404n,
     };
   } else {
@@ -27,7 +27,7 @@ export function getAlignEnvironment(
       indexer: "https://apidev-v9.align.network",
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
-      explorer: "https://sepolia-optimistic.etherscan.io/address/",
+      explorer: "https://sepolia-optimistic.etherscan.io/",
       blockStart: 13460726n,
     };
   }
