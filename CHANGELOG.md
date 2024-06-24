@@ -1,3 +1,10 @@
+## [1.10.15](https://github.com/AlignNetwork/align-sdk/compare/v1.10.14...v1.10.15) (2024-06-24)
+
+
+### Bug Fixes
+
+* added https to ipfs ([d5d9f4e](https://github.com/AlignNetwork/align-sdk/commit/d5d9f4e9496c54757ba3e43f6b2a92e2ebcfbd6a))
+
 ## [1.10.14](https://github.com/AlignNetwork/align-sdk/compare/v1.10.13...v1.10.14) (2024-06-24)
 
 
