@@ -35,7 +35,10 @@ export async function getArrayBuffer(
     method: "GET",
   });
   const result = (await res.json()) as {
-    buffer: ArrayBuffer;
+    buffer: {
+      data: ArrayBuffer;
+      type: string;
+    };
     filetype: string;
   };
   console.log("cid:", result);
