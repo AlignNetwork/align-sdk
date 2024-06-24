@@ -1,3 +1,11 @@
+## [1.10.14](https://github.com/AlignNetwork/align-sdk/compare/v1.10.13...v1.10.14) (2024-06-24)
+
+
+### Bug Fixes
+
+* updated arraybuffer ([f7adef3](https://github.com/AlignNetwork/align-sdk/commit/f7adef3ee6db49612a799b9b1f9812f8980407cb))
+* updated arraybuffer ([af2dddc](https://github.com/AlignNetwork/align-sdk/commit/af2dddc4cc0e7ad02d1b9b60c50c04338512cf1f))
+
 ## [1.10.13](https://github.com/AlignNetwork/align-sdk/compare/v1.10.12...v1.10.13) (2024-06-23)
 
 
