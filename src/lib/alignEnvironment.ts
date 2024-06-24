@@ -10,7 +10,7 @@ export function getAlignEnvironment(
         "0x169610100A7A25CF154C26b1A811FEf8592b27A8" as `0x${string}`,
       interactionStation:
         "0xBb03fabb5709B52eC483314c964a187Bf447E508" as `0x${string}`,
-      ipfs: "http://ipfs.align.network",
+      ipfs: "https://ipfs.align.network",
       indexer: "https://indexer.align.network",
       idABI: alignIdRegistryABI,
       isABI: interactionStationABI,
