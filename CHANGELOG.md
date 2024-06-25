@@ -1,3 +1,10 @@
+## [1.10.17](https://github.com/AlignNetwork/align-sdk/compare/v1.10.16...v1.10.17) (2024-06-25)
+
+
+### Bug Fixes
+
+* array buffer to also return raw json result ([657fd83](https://github.com/AlignNetwork/align-sdk/commit/657fd837da11a7ed66a26d3a699053e89a8ebf4e))
+
 ## [1.10.16](https://github.com/AlignNetwork/align-sdk/compare/v1.10.15...v1.10.16) (2024-06-24)
 
 
