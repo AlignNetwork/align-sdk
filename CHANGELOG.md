@@ -1,3 +1,10 @@
+## [1.10.20](https://github.com/AlignNetwork/align-sdk/compare/v1.10.19...v1.10.20) (2024-06-25)
+
+
+### Bug Fixes
+
+* added alignbadge1 to defaults ([3737644](https://github.com/AlignNetwork/align-sdk/commit/3737644aea05dd4fd032b253a715f13cf3131ae8))
+
 ## [1.10.19](https://github.com/AlignNetwork/align-sdk/compare/v1.10.18...v1.10.19) (2024-06-25)
 
 
