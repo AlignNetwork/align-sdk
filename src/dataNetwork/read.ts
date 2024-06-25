@@ -43,7 +43,7 @@ export async function getArrayBuffer(
         filetype: string;
       }
     | { [key: string]: any };
-  if (result.buffer.data instanceof ArrayBuffer) {
+  if (result.buffer.data !== undefined) {
     console.log("cid:", result);
     const arrayBuffer = new Uint8Array(result.buffer.data).buffer;
     const fileType = result.filetype;
