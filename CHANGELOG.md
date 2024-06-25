@@ -1,3 +1,10 @@
+## [1.10.19](https://github.com/AlignNetwork/align-sdk/compare/v1.10.18...v1.10.19) (2024-06-25)
+
+
+### Bug Fixes
+
+* fixed ab ([7242c4f](https://github.com/AlignNetwork/align-sdk/commit/7242c4f63e367880df676b81704ea1fbe99550c2))
+
 ## [1.10.18](https://github.com/AlignNetwork/align-sdk/compare/v1.10.17...v1.10.18) (2024-06-25)
 
 
