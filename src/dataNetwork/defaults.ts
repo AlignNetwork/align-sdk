@@ -67,4 +67,21 @@ export const AlignDefaults = {
       version: "0.1.0",
     },
   },
+  alignBadge1: {
+    iTypeKey:
+      "0x104fd5fa991e82dbef8bbab47e4596f1c5a14817f4c929ce36cfca0682080849" as `0x${string}`,
+    iKey: "" as `0x${string}`,
+    parentKeys:
+      "0x0000000000000000000000000000000000000000000000000000000000000000" as `0x${string}`,
+    cid: "bafyreib62ecdcatiu7sqx2moo4727vmxes6rwjxbgd6vrugkrjzxkt43p4",
+    version: "0.1.0",
+    name: "Align Badge 1",
+    summary: "This is a badge.",
+    content: {
+      version: "0.1.0",
+      name: "align Badge 1",
+      summary: "This is the first Align badge.",
+      content: "",
+    },
+  },
 };
