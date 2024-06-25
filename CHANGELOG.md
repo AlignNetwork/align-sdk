@@ -1,3 +1,10 @@
+## [1.10.18](https://github.com/AlignNetwork/align-sdk/compare/v1.10.17...v1.10.18) (2024-06-25)
+
+
+### Bug Fixes
+
+* updated getarraybuffger in align-sdk ([585e8d0](https://github.com/AlignNetwork/align-sdk/commit/585e8d08e37fa86dddfd53ef9df462726f4c6b23))
+
 ## [1.10.17](https://github.com/AlignNetwork/align-sdk/compare/v1.10.16...v1.10.17) (2024-06-25)
 
 
